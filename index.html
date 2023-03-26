@@ -1,0 +1,5401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+html> body{
+
+        background: radial-gradient(circle, rgb(37, 38, 38) 0%, rgb(0, 6, 6) 81%);
+  	    height: 100%;
+    	margin: 0;
+    	padding: 0;
+    	text-align: center;
+        color: white;
+            }
+
+ h1 {
+  	color: #fff;
+  	font-size: 30px;
+  	font-family: monospace;
+  	font-weight: bold;
+ 	text-align: center;
+  	text-shadow: 
+      	1px -1px 0 #2f5d87,
+      	2px -2px 0 #2e5a83, 
+      	3px -3px 0 #2d5880;
+}
+
+h2 {
+   	color: #fff;
+    	font-size: 60px;
+    	font-family: sans-serif;
+    	font-weight: bold;
+    	text-align: center;
+    	text-shadow: 0 0 10px blue;
+}
+
+h4 {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 
+      	1px -1px 0 #2f5d87,
+      	2px -2px 0 #2e5a83, 
+      	3px -3px 0 #2d5880;
+
+}
+
+h5{
+    	color: #fff;
+    	font-size: 20px;
+    	font-family: sans-serif;
+    	font-weight: italic;
+   	    text-align: center;
+    	text-shadow: 0 0 10px black;
+}
+
+
+    </style>
+</head>
+<body>
+<br><br>
+    <img src="teclas_no_VSCODE.jpg" alt="Image" height="300" width="600">
+
+    <h2 >TECLAS DE ATALHOS NO VSCODE</h2>
+    <h4> Comandos mais utilizados</H4>
+<table  border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solução de compilação</td>
+<td><strong>Ctrl+Shift+B</strong></td>
+<td>Build.BuildSolution</td>
+</tr>
+<tr>
+<td>Cancelar</td>
+<td><strong>Ctrl+Break</strong></td>
+<td>Build.Cancel</td>
+</tr>
+<tr>
+<td>Compilar</td>
+<td><strong>Ctrl+F7</strong></td>
+<td>Build.Compile</td>
+</tr>
+<tr>
+<td>Executar Análise de Código na Solução</td>
+<td><strong>Alt+F11</strong></td>
+<td>Build.RunCodeAnalysisonSolution</td>
+</tr>
+</tbody>
+</table>
+<h4> Depurar: atalhos populares</h4>
+<table  border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interromper na função</td>
+<td><strong>Ctrl+B</strong></td>
+<td>Debug.BreakatFunction</td>
+</tr>
+<tr>
+<td>Quebrar tudo</td>
+<td><strong>Ctrl+Alt+Break</strong></td>
+<td>Debug.BreakAll</td>
+</tr>
+<tr>
+<td>Excluir todos os pontos de interrupção</td>
+<td><strong>Ctrl+Shift+F9</strong></td>
+<td>Debug.DeleteAllBreakpoints</td>
+</tr>
+<tr>
+<td>Exceções</td>
+<td><strong>Ctrl+Alt+E</strong></td>
+<td>Debug.Exceptions</td>
+</tr>
+<tr>
+<td>Inspeção Rápida</td>
+<td><strong>Ctrl+Alt+Q</strong><br><br>ou <strong>Shift+F9</strong></td>
+<td>Debug.QuickWatch</td>
+</tr>
+<tr>
+<td>Reiniciar</td>
+<td><strong>Ctrl+Shift+F5</strong></td>
+<td>Debug.Restart</td>
+</tr>
+<tr>
+<td>Executar até o cursor</td>
+<td><strong>Ctrl+F10</strong></td>
+<td>Debug.RunToCursor</td>
+</tr>
+<tr>
+<td>Definir próxima instrução</td>
+<td><strong>Ctrl+Shift+F10</strong></td>
+<td>Debug.SetNextStatement</td>
+</tr>
+<tr>
+<td>Iniciar</td>
+<td><strong>F5</strong></td>
+<td>Debug.Start</td>
+</tr>
+<tr>
+<td>Iniciar sem depuração</td>
+<td><strong>Ctrl+F5</strong></td>
+<td>Debug.StartWithoutDebugging</td>
+</tr>
+<tr>
+<td>Avançar</td>
+<td><strong>F11</strong></td>
+<td>Debug.StepInto</td>
+</tr>
+<tr>
+<td>Sair</td>
+<td><strong>Shift+F11</strong></td>
+<td>Debug.StepOut</td>
+</tr>
+<tr>
+<td>Passar por</td>
+<td><strong>F10</strong></td>
+<td>Debug.StepOver</td>
+</tr>
+<tr>
+<td>Parar a depuração</td>
+<td><strong>Shift+F5</strong></td>
+<td>Debug.StopDebugging</td>
+</tr>
+<tr>
+<td>Alterna um ponto de interrupção</td>
+<td><strong>F9</strong></td>
+<td>Debug.ToggleBreakpoint</td>
+</tr>
+</tbody>
+</table>
+<h4> Editar: atalhos populares</h4>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quebrar linha</td>
+<td><strong>Enter</strong> [Editor de Texto, Designer de Relatórios, Designer de Formulários do Windows]<br><br>ou <strong>Shift+Enter</strong> [Editor de Texto]</td>
+<td>Edit.BreakLine</td>
+</tr>
+<tr>
+<td>Recolher para definições</td>
+<td><strong>Ctrl+M</strong>, <strong>Ctrl+O</strong> [Editor de Texto]</td>
+<td>Edit.CollapseToDefinitions</td>
+</tr>
+<tr>
+<td>Comentar seleção</td>
+<td><strong>Ctrl+K</strong>, <strong>Ctrl+C</strong> [Editor de Texto]</td>
+<td>Edit.CommentSelection</td>
+</tr>
+<tr>
+<td>Completar a palavra</td>
+<td><strong>Alt+Seta para a Direita</strong> [Editor de Texto, Designer de Fluxo de Trabalho]<br><br>ou <strong>Ctrl+Barra de espaços</strong> [Editor de Texto, Designer de Fluxo de Trabalho]<br><br>ou <strong>Ctrl+K</strong>, <strong>W</strong> [Designer de Fluxo de Trabalho]<br><br>ou <strong>Ctrl+K, Ctrl+W</strong> [Designer de Fluxo de Trabalho]</td>
+<td>Edit.CompleteWord</td>
+</tr>
+<tr>
+<td>Copiar</td>
+<td><strong>Ctrl+C</strong><br><br>ou <strong>Ctrl+Insert</strong></td>
+<td>Edit.Copy</td>
+</tr>
+<tr>
+<td>Recortar</td>
+<td><strong>Ctrl+X</strong><br><br>ou <strong>Shift+Delete</strong></td>
+<td>Edit.Cut</td>
+</tr>
+<tr>
+<td>Excluir</td>
+<td><strong>Excluir</strong> [Team Explorer]<br><br>ou <strong>Shift+Delete</strong> [Diagrama de Sequência, Diagrama de Atividades UML, Diagrama de Camada]<br><br>ou <strong>Ctrl+Delete</strong> [Diagrama de Classes]</td>
+<td>Edit.Delete</td>
+</tr>
+<tr>
+<td>Localizar</td>
+<td><strong>Ctrl+F</strong></td>
+<td>Edit.Find</td>
+</tr>
+<tr>
+<td>Localizar todas as referências</td>
+<td><strong>Shift+F12</strong></td>
+<td>Edit.FindAllReferences</td>
+</tr>
+<tr>
+<td>Localizar nos arquivos</td>
+<td><strong>Ctrl+Shift+F</strong></td>
+<td>Edit.FindinFiles</td>
+</tr>
+<tr>
+<td>Localizar próximo</td>
+<td><strong>F3</strong></td>
+<td>Edit.FindNext</td>
+</tr>
+<tr>
+<td>Localizar Próxima seleção</td>
+<td><strong>Ctrl+F3</strong></td>
+<td>Edit.FindNextSelected</td>
+</tr>
+<tr>
+<td>Formatar documento</td>
+<td><strong>Ctrl+K, Ctrl+D</strong> [Editor de Texto]</td>
+<td>Edit.FormatDocument</td>
+</tr>
+<tr>
+<td>Formatar seleção</td>
+<td><strong>Ctrl+K, Ctrl+F</strong> [Editor de Texto]</td>
+<td>Edit.FormatSelection</td>
+</tr>
+<tr>
+<td>Ir para</td>
+<td><strong>Ctrl+G</strong></td>
+<td>Edit.GoTo</td>
+</tr>
+<tr>
+<td>Ir para a declaração</td>
+<td><strong>Ctrl+F12</strong></td>
+<td>Edit.GoToDeclaration</td>
+</tr>
+<tr>
+<td>Ir para definição</td>
+<td><strong>F12</strong></td>
+<td>Edit.GoToDefinition</td>
+</tr>
+<tr>
+<td>Ir para encontrar a combinação</td>
+<td><strong>Ctrl+D</strong></td>
+<td>Edit.GoToFindCombo</td>
+</tr>
+<tr>
+<td>Ir para o próximo local</td>
+<td><strong>F8</strong></td>
+<td>Edit.GoToNextLocation</td>
+</tr>
+<tr>
+<td>Inserir Snippet</td>
+<td><strong>Ctrl+K</strong>, <strong>Ctrl+X</strong></td>
+<td>Edit.InsertSnippet</td>
+</tr>
+<tr>
+<td>Guia Inserir</td>
+<td><strong>Tab</strong> [Designer de Relatórios, Designer de Formulários do Windows, Editor de Texto]</td>
+<td>Edit.InsertTab</td>
+</tr>
+<tr>
+<td>Corte de linha</td>
+<td><strong>Ctrl+L</strong> [Editor de Texto]</td>
+<td>Edit.LineCut</td>
+</tr>
+<tr>
+<td>Coluna de extensão de linha para baixo</td>
+<td><strong>Shift+Alt+Seta para Baixo</strong> [Editor de Texto]</td>
+<td>Edit.LineDownExtendColumn</td>
+</tr>
+<tr>
+<td>Linha aberta acima</td>
+<td><strong>Ctrl+Enter</strong> [Editor de Texto]</td>
+<td>Edit.LineOpenAbove</td>
+</tr>
+<tr>
+<td>Listar os membros</td>
+<td><strong>Ctrl+J</strong> [Editor de Texto, Designer de Fluxo de Trabalho]<br><br>ou <strong>Ctrl+K, Ctrl+L</strong> [Designer de Fluxo de Trabalho]<br><br>ou <strong>Ctrl+K, L</strong> [Designer de Fluxo de Trabalho]</td>
+<td>Edit.ListMembers</td>
+</tr>
+<tr>
+<td>Navegar para</td>
+<td><strong>Ctrl+,</strong></td>
+<td>Edit.NavigateTo</td>
+</tr>
+<tr>
+<td>Abrir arquivo</td>
+<td><strong>Ctrl+Shift+G</strong></td>
+<td>Edit.OpenFile</td>
+</tr>
+<tr>
+<td>Modo de sobretipo</td>
+<td><strong>Insert</strong> [Editor de Texto]</td>
+<td>Edit.OvertypeMode</td>
+</tr>
+<tr>
+<td>Informações de parâmetro</td>
+<td><strong>Ctrl+Shift+Barra de espaços</strong> [Editor de Texto, Designer de Fluxo de Trabalho]<br><br>ou <strong>Ctrl+K, Ctrl+P</strong> [Designer de Fluxo de Trabalho]<br><br>ou <strong>Ctrl+K, P</strong> [Designer de Fluxo de Trabalho]</td>
+<td>Edit.ParameterInfo</td>
+</tr>
+<tr>
+<td>Colar</td>
+<td><strong>Ctrl+V</strong><br><br>ou <strong>Shift+Insert</strong></td>
+<td>Edit.Paste</td>
+</tr>
+<tr>
+<td>Inspecionar Definição</td>
+<td><strong>Alt+F12</strong> [Editor de Texto]</td>
+<td>Edit.PeekDefinition</td>
+</tr>
+<tr>
+<td>Refazer</td>
+<td><strong>Ctrl+Y</strong><br><br>ou <strong>Shift+Alt+Backspace</strong><br><br>ou <strong>Ctrl+Shift+Z</strong></td>
+<td>Edit.Redo</td>
+</tr>
+<tr>
+<td>Substitua</td>
+<td><strong>Ctrl+H</strong></td>
+<td>Edit.Replace</td>
+</tr>
+<tr>
+<td>Selecionar tudo</td>
+<td><strong>Ctrl+A</strong></td>
+<td>Edit.SelectAll</td>
+</tr>
+<tr>
+<td>Selecionar a palavra atual</td>
+<td><strong>Ctrl+W</strong> [Editor de Texto]</td>
+<td>Edit.SelectCurrentWord</td>
+</tr>
+<tr>
+<td>Cancelar seleção</td>
+<td><strong>Esc</strong> [Editor de Texto, Designer de Relatórios, Designer de Configurações, Designer de Formulários do Windows, Editor de Recursos Gerenciados]</td>
+<td>Edit.SelectionCancel</td>
+</tr>
+<tr>
+<td>Envolver com</td>
+<td><strong>Ctrl+K, Ctrl+S</strong> <br>(disponível apenas no Visual Studio 2019 e anterior)</td>
+<td>Edit.SurroundWith</td>
+</tr>
+<tr>
+<td>Tabulação à esquerda</td>
+<td><strong>Shift+Tab</strong> [Editor de Texto, Designer de Relatórios, Editor de Formulários do Windows]</td>
+<td>Edit.TabLeft</td>
+</tr>
+<tr>
+<td>Ativar/Desativar estrutura de tópicos para tudo</td>
+<td><strong>Ctrl+M, Ctrl+L</strong> [Editor de Texto]</td>
+<td>Edit.ToggleAllOutlining</td>
+</tr>
+<tr>
+<td>Ativar/desativar indicador</td>
+<td><strong>Ctrl+K, Ctrl+K</strong> [Editor de Texto]</td>
+<td>Edit.ToggleBookmark</td>
+</tr>
+<tr>
+<td>Alternar o modo de conclusão</td>
+<td><strong>Ctrl+Alt+Space</strong> [Editor de Texto]</td>
+<td>Edit.ToggleCompletionMode</td>
+</tr>
+<tr>
+<td>Ativar/Desativar Expansão da Estrutura de Tópicos</td>
+<td><strong>Ctrl+M, Ctrl+M</strong> [Editor de Texto]</td>
+<td>Edit.ToggleOutliningExpansion</td>
+</tr>
+<tr>
+<td>Remover Comentários da Seleção</td>
+<td><strong>Ctrl+K, Ctrl+U</strong> [Editor de Texto]</td>
+<td>Edit.UncommentSelection</td>
+</tr>
+<tr>
+<td>Desfazer</td>
+<td><strong>Ctrl+Z</strong><br><br>ou <strong>Alt+Backspace</strong></td>
+<td>Edit.Undo</td>
+</tr>
+<tr>
+<td>Excluir palavra até o fim</td>
+<td><strong>Ctrl+Delete</strong> [Editor de Texto]</td>
+<td>Edit.WordDeleteToEnd</td>
+</tr>
+<tr>
+<td>Excluir palavra até o início</td>
+<td><strong>Ctrl+Backspace</strong> [Editor de Texto]</td>
+<td>Edit.WordDeleteToStart</td>
+</tr>
+</tbody>
+</table>
+<h4> Aquivo: atalhos populares</h4>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fechar</td>
+<td><strong>Alt+F4</strong></td>
+<td>File.Exit</td>
+</tr>
+<tr>
+<td>Novo arquivo</td>
+<td><strong>Ctrl+N</strong></td>
+<td>File.NewFile</td>
+</tr>
+<tr>
+<td>Novo Projeto</td>
+<td><strong>Ctrl+Shift+N</strong></td>
+<td>File.NewProject</td>
+</tr>
+<tr>
+<td>Novo site</td>
+<td><strong>Shift+Alt+N</strong></td>
+<td>File.NewWebSite</td>
+</tr>
+<tr>
+<td>Abrir arquivo</td>
+<td><strong>Ctrl+O</strong></td>
+<td>File.OpenFile</td>
+</tr>
+<tr>
+<td>Abrir projeto</td>
+<td><strong>Ctrl+Shift+O</strong></td>
+<td>File.OpenProject</td>
+</tr>
+<tr>
+<td>Abrir site</td>
+<td><strong>Shift+Alt+O</strong></td>
+<td>File.OpenWebSite</td>
+</tr>
+<tr>
+<td>Renomear</td>
+<td><strong>F2</strong> [Team Explorer]</td>
+<td>File.Rename</td>
+</tr>
+<tr>
+<td>Salvar tudo</td>
+<td><strong>Ctrl+Shift+S</strong></td>
+<td>File.SaveAll</td>
+</tr>
+<tr>
+<td>Salvar Itens selecionados</td>
+<td><strong>Ctrl+S</strong></td>
+<td>File.SaveSelectedItems</td>
+</tr>
+<tr>
+<td>Exibir no navegador</td>
+<td><strong>Ctrl+Shift+W</strong></td>
+<td>File.ViewinBrowser</td>
+</tr>
+</tbody>
+</table>
+<h4> Projeto: atalhos populares</h4>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adicionar item existente</td>
+<td><strong>Shift+Alt+A</strong></td>
+<td>Project.AddExistingItem</td>
+</tr>
+<tr>
+<td>Adicionar novo item</td>
+<td><strong>Ctrl+Shift+A</strong></td>
+<td>Project.AddNewItem</td>
+</tr>
+</tbody>
+</table>
+<h4> Refatorar: atalhos populares</h4>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extrair método</td>
+<td><strong>Ctrl+R, Ctrl+M</strong></td>
+<td>Refactor.ExtractMethod</td>
+</tr>
+</tbody>
+</table>
+<h4> Ferramentas: atalhos populares</h4>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anexar ao processo</td>
+<td><strong>Ctrl+Alt+P</strong></td>
+<td>Tools.AttachtoProcess</td>
+</tr>
+</tbody>
+</table>
+<h4> Exibir: atalhos populares</h4>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exibição de classe</td>
+<td><strong>Ctrl+Shift+C</strong></td>
+<td>View.ClassView</td>
+</tr>
+<tr>
+<td>Editar rótulo</td>
+<td><strong>F2</strong></td>
+<td>View.EditLabel</td>
+</tr>
+<tr>
+<td>Lista de erros</td>
+<td><strong>Ctrl+\, Ctrl+E</strong><br><br>ou <strong>Ctrl+\, E</strong></td>
+<td>View.ErrorList</td>
+</tr>
+<tr>
+<td>Navegar para trás</td>
+<td><strong>Ctrl+-</strong></td>
+<td>View.NavigateBackward</td>
+</tr>
+<tr>
+<td>Navegar para frente</td>
+<td><strong>Ctrl+Shift+-</strong></td>
+<td>View.NavigateForward</td>
+</tr>
+<tr>
+<td>Navegador de objetos</td>
+<td><strong>Ctrl+Alt+J</strong></td>
+<td>View.ObjectBrowser</td>
+</tr>
+<tr>
+<td>Saída</td>
+<td><strong>Ctrl+Alt+O</strong></td>
+<td>View.Output</td>
+</tr>
+<tr>
+<td>Janela de Propriedades</td>
+<td><strong>F4</strong></td>
+<td>View.PropertiesWindow</td>
+</tr>
+<tr>
+<td>Atualizar</td>
+<td><strong>F5</strong> [Team Explorer]</td>
+<td>View.Refresh</td>
+</tr>
+<tr>
+<td>Gerenciador de servidor</td>
+<td><strong>Ctrl+Alt+S</strong></td>
+<td>View.ServerExplorer</td>
+</tr>
+<tr>
+<td>Mostrar marca inteligente</td>
+<td><strong>Ctrl+.</strong><br><br>ou <strong>Shift+Alt+F10</strong> [Modo Design do Editor de HTML]</td>
+<td>View.ShowSmartTag</td>
+</tr>
+<tr>
+<td>Gerenciador de soluções</td>
+<td><strong>Ctrl+Alt+L</strong></td>
+<td>View.SolutionExplorer</td>
+</tr>
+<tr>
+<td>TFS Team Explorer</td>
+<td><strong>Ctrl+\, Ctrl+M</strong></td>
+<td>View.TfsTeamExplorer</td>
+</tr>
+<tr>
+<td>Caixa de Ferramentas</td>
+<td><strong>Ctrl+Alt+X</strong></td>
+<td>View.Toolbox</td>
+</tr>
+<tr>
+<td>Exibir Código</td>
+<td><strong>Enter</strong> [Diagrama de Classe]<br><br>ou <strong>F7</strong> [Designer de Configurações]</td>
+<td>View.ViewCode</td>
+</tr>
+<tr>
+<td>Designer de exibição</td>
+<td><strong>Shift+F7</strong> [Modo Código-fonte do Editor de HTML]</td>
+<td>View.ViewDesigner</td>
+</tr>
+</tbody>
+</table>
+<h4> Janela: atalhos populares</h4>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos de teclado [Contextos especiais]</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ativar janela do documento</td>
+<td><strong>Esc</strong></td>
+<td>Window.ActivateDocumentWindow</td>
+</tr>
+<tr>
+<td>Fechar janela do documento</td>
+<td><strong>Ctrl+F4</strong></td>
+<td>Window.CloseDocumentWindow</td>
+</tr>
+<tr>
+<td>Próxima janela do documento</td>
+<td><strong>Ctrl+F6</strong></td>
+<td>Window.NextDocumentWindow</td>
+</tr>
+<tr>
+<td>Nav próxima janela do documento</td>
+<td><strong>Ctrl+Tab</strong></td>
+<td>Window.NextDocumentWindowNav</td>
+</tr>
+<tr>
+<td>Próximo painel dividido</td>
+<td><strong>F6</strong></td>
+<td>Window.NextSplitPane</td>
+</tr>
+</tbody>
+</table>
+<h2>Atalhos globais</h2>
+<p>Esses atalhos de teclado são <em>globais</em>, o que significa que você pode usá-los quando qualquer janela do Visual Studio estiver em foco.</p>
+
+<h3> Analisar: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Navegar para trás</td>
+<td><strong>Shift+Alt+3</strong></td>
+<td>Analyze.NavigateBackward</td>
+</tr>
+<tr>
+<td>Navegar para frente</td>
+<td><strong>Shift+Alt+4</strong></td>
+<td>Analyze.NavigateForward</td>
+</tr>
+</tbody>
+</table>
+<h3> Arquitetura: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Novo diagrama</td>
+<td><strong>Ctrl+\, Ctrl+N</strong></td>
+<td>Architecture.NewDiagram</td>
+</tr>
+</tbody>
+</table>
+<h3> Azure: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repetir operação de script de serviço móvel</td>
+<td><strong>Ctrl+Num *, Ctrl+R</strong></td>
+<td>WindowsAzure.RetryMobileServiceScriptOperation</td>
+</tr>
+<tr>
+<td>Mostrar detalhes do erro de script do serviço móvel</td>
+<td><strong>Ctrl+Num *, Ctrl+D</strong></td>
+<td>WindowsAzure.ShowMobileServiceScriptErrorDetails</td>
+</tr>
+</tbody>
+</table>
+<h3> Compilação: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Seleção de compilação</td>
+<td><strong>Ctrl+B</strong> (Visual Studio 2019)</td>
+<td>Build.BuildSelection</td>
+</tr>
+<tr>
+<td>Solução de compilação</td>
+<td><strong>Ctrl+Shift+B</strong></td>
+<td>Build.BuildSolution</td>
+</tr>
+<tr>
+<td>Cancelar</td>
+<td><strong>Ctrl+Break</strong></td>
+<td>Build.Cancel</td>
+</tr>
+<tr>
+<td>Compilar</td>
+<td><strong>Ctrl+F7</strong></td>
+<td>Build.Compile</td>
+</tr>
+<tr>
+<td>Executar Análise de Código na Solução</td>
+<td><strong>Alt+F11</strong></td>
+<td>Build.RunCodeAnalysisonSolution</td>
+</tr>
+</tbody>
+</table>
+<h3> Menus de contexto do Modo de Exibição de Classe: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Propriedades</td>
+<td><strong>Alt+Enter</strong></td>
+<td>ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties</td>
+</tr>
+</tbody>
+</table>
+<h3> Depuração: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplicar alterações de código</td>
+<td><strong>Alt+F10</strong></td>
+<td>Debug.ApplyCodeChanges</td>
+</tr>
+<tr>
+<td>Anexar ao processo</td>
+<td><strong>Ctrl+Alt+P</strong></td>
+<td>Debug.AttachtoProcess</td>
+</tr>
+<tr>
+<td>Autos</td>
+<td><strong>Ctrl+Alt+V, A</strong></td>
+<td>Debug.Autos</td>
+</tr>
+<tr>
+<td>Quebrar tudo</td>
+<td><strong>Ctrl+Alt+Break</strong></td>
+<td>Debug.BreakAll</td>
+</tr>
+<tr>
+<td>Pontos de interrupção</td>
+<td><strong>Ctrl+Alt+B</strong></td>
+<td>Debug.Breakpoints</td>
+</tr>
+<tr>
+<td>Pilha de chamadas</td>
+<td><strong>Ctrl+Alt+C</strong></td>
+<td>Debug.CallStack</td>
+</tr>
+<tr>
+<td>Excluir todos os pontos de interrupção</td>
+<td><strong>Ctrl+Shift+F9</strong></td>
+<td>Debug.DeleteAllBreakpoints</td>
+</tr>
+<tr>
+<td>Inicializar</td>
+<td><strong>Alt+F2</strong></td>
+<td>Debug.DiagnosticsHub.Launch</td>
+</tr>
+<tr>
+<td>Desmontagem</td>
+<td><strong>Ctrl+Alt+D</strong></td>
+<td>Debug.Disassembly</td>
+</tr>
+<tr>
+<td>Explorador de Dom</td>
+<td><strong>Ctrl+Alt+V, D</strong></td>
+<td>Debug.DOMExplorer</td>
+</tr>
+<tr>
+<td>Habilitar ponto de interrupção</td>
+<td><strong>Ctrl+F9</strong></td>
+<td>Debug.EnableBreakpoint</td>
+</tr>
+<tr>
+<td>Exceções</td>
+<td><strong>Ctrl+Alt+E</strong></td>
+<td>Debug.Exceptions</td>
+</tr>
+<tr>
+<td>Ponto de interrupção de função</td>
+<td><strong>Ctrl+K, B</strong> (Visual Studio 2019)<br><strong>Ctrl</strong>+<strong>B</strong> (Visual Studio 2017)</td>
+<td>Debug.FunctionBreakpoint</td>
+</tr>
+<tr>
+<td>Ir para chamada anterior ou para evento do IntelliTrace</td>
+<td><strong>Ctrl+Shift+F11</strong></td>
+<td>Debug.GoToPreviousCallorIntelliTraceEvent</td>
+</tr>
+<tr>
+<td>Iniciar diagnóstico</td>
+<td><strong>Alt+F5</strong></td>
+<td>Debug.Graphics.StartDiagnostics</td>
+</tr>
+<tr>
+<td>Imediata</td>
+<td><strong>Ctrl+Alt+I</strong></td>
+<td>Debug.Immediate</td>
+</tr>
+<tr>
+<td>Chamadas do IntelliTrace</td>
+<td><strong>Ctrl+Alt+Y, T</strong></td>
+<td>Debug.IntelliTraceCalls</td>
+</tr>
+<tr>
+<td>Eventos do IntelliTrace</td>
+<td><strong>Ctrl+Alt+Y, F</strong></td>
+<td>Debug.IntelliTraceEvents</td>
+</tr>
+<tr>
+<td>Console JavaScript</td>
+<td><strong>Ctrl+Alt+V, C</strong></td>
+<td>Debug.JavaScriptConsole</td>
+</tr>
+<tr>
+<td>Locais</td>
+<td><strong>Ctrl+Alt+V, L</strong></td>
+<td>Debug.Locals</td>
+</tr>
+<tr>
+<td>Combinação de processos</td>
+<td><strong>Ctrl+5</strong></td>
+<td>Debug.LocationToolbar.ProcessCombo</td>
+</tr>
+<tr>
+<td>Combinação de quadros de pilha</td>
+<td><strong>Ctrl+7</strong></td>
+<td>Debug.LocationToolbar.StackFrameCombo</td>
+</tr>
+<tr>
+<td>Combinação de threads</td>
+<td><strong>Ctrl+6</strong></td>
+<td>Debug.LocationToolbar.ThreadCombo</td>
+</tr>
+<tr>
+<td>Alternar o estado sinalizado do thread atual</td>
+<td><strong>Ctrl+8</strong></td>
+<td>Debug.LocationToolbar.ToggleCurrentThreadFlaggedState</td>
+</tr>
+<tr>
+<td>Alternar threads sinalizados</td>
+<td><strong>Ctrl+9</strong></td>
+<td>Debug.LocationToolbar.ToggleFlaggedThreads</td>
+</tr>
+<tr>
+<td>Memória 1</td>
+<td><strong>Ctrl+Alt+M, 1</strong></td>
+<td>Debug.Memory1</td>
+</tr>
+<tr>
+<td>Memória 2</td>
+<td><strong>Ctrl+Alt+M, 2</strong></td>
+<td>Debug.Memory2</td>
+</tr>
+<tr>
+<td>Memória 3</td>
+<td><strong>Ctrl+Alt+M, 3</strong></td>
+<td>Debug.Memory3</td>
+</tr>
+<tr>
+<td>Memória 4</td>
+<td><strong>Ctrl+Alt+M, 4</strong></td>
+<td>Debug.Memory4</td>
+</tr>
+<tr>
+<td>Módulos</td>
+<td><strong>Ctrl+Alt+U</strong></td>
+<td>Debug.Modules</td>
+</tr>
+<tr>
+<td>Pilhas paralelas</td>
+<td><strong>Ctrl+Shift+D, S</strong></td>
+<td>Debug.ParallelStacks</td>
+</tr>
+<tr>
+<td>Inspeção paralela 1</td>
+<td><strong>Ctrl+Shift+D, 1</strong></td>
+<td>Debug.ParallelWatch1</td>
+</tr>
+<tr>
+<td>Inspeção paralela 2</td>
+<td><strong>Ctrl+Shift+D, 2</strong></td>
+<td>Debug.ParallelWatch2</td>
+</tr>
+<tr>
+<td>Inspeção paralela 3</td>
+<td><strong>Ctrl+Shift+D, 3</strong></td>
+<td>Debug.ParallelWatch3</td>
+</tr>
+<tr>
+<td>Inspeção paralela 4</td>
+<td><strong>Ctrl+Shift+D, 4</strong></td>
+<td>Debug.ParallelWatch4</td>
+</tr>
+<tr>
+<td>Processos</td>
+<td><strong>Ctrl + Alt + Z</strong></td>
+<td>Debug.Processes</td>
+</tr>
+<tr>
+<td>Inspeção Rápida</td>
+<td><strong>Shift+F9</strong> ou <strong>Ctrl+Alt+Q</strong></td>
+<td>Debug.QuickWatch</td>
+</tr>
+<tr>
+<td>Reanexar ao processo</td>
+<td><strong>Shift+Alt+P</strong></td>
+<td>Debug.ReattachtoProcess</td>
+</tr>
+<tr>
+<td>Atualizar o aplicativo Windows</td>
+<td><strong>Ctrl+Shift+R</strong></td>
+<td>Debug.RefreshWindowsapp</td>
+</tr>
+<tr>
+<td>Registros</td>
+<td><strong>Ctrl+Alt+G</strong></td>
+<td>Debug.Registers</td>
+</tr>
+<tr>
+<td>Reiniciar</td>
+<td><strong>Ctrl+Shift+F5</strong></td>
+<td>Debug.Restart</td>
+</tr>
+<tr>
+<td>Executar até o cursor</td>
+<td><strong>Ctrl+F10</strong></td>
+<td>Debug.RunToCursor</td>
+</tr>
+<tr>
+<td>Definir próxima instrução</td>
+<td><strong>Ctrl+Shift+F10</strong></td>
+<td>Debug.SetNextStatement</td>
+</tr>
+<tr>
+<td>Mostrar pilha de chamadas no mapa de códigos</td>
+<td><strong>Ctrl+Shift+`</strong></td>
+<td>Debug.ShowCallStackonCodeMap</td>
+</tr>
+<tr>
+<td>Mostrar próxima instrução</td>
+<td><strong>Alt+Num</strong> *</td>
+<td>Debug.ShowNextStatement</td>
+</tr>
+<tr>
+<td>Iniciar</td>
+<td><strong>F5</strong></td>
+<td>Debug.Start</td>
+</tr>
+<tr>
+<td>Iniciar análise de Aplicativo do Windows Phone</td>
+<td><strong>Alt+F1</strong></td>
+<td>Debug.StartWindowsPhoneApplicationAnalysis</td>
+</tr>
+<tr>
+<td>Iniciar sem depuração</td>
+<td><strong>Ctrl+F5</strong></td>
+<td>Debug.StartWithoutDebugging</td>
+</tr>
+<tr>
+<td>Avançar</td>
+<td><strong>F11</strong></td>
+<td>Debug.StepInto</td>
+</tr>
+<tr>
+<td>Intervir no processo atual</td>
+<td><strong>Ctrl+Alt+F11</strong></td>
+<td>Debug.StepIntoCurrentProcess</td>
+</tr>
+<tr>
+<td>Intervir em específico</td>
+<td><strong>Shift+Alt+F11</strong></td>
+<td>Debug.StepIntoSpecific</td>
+</tr>
+<tr>
+<td>Sair</td>
+<td><strong>Shift+F11</strong></td>
+<td>Debug.StepOut</td>
+</tr>
+<tr>
+<td>Sair do processo atual</td>
+<td><strong>Ctrl+Shift+Alt+F11</strong></td>
+<td>Debug.StepOutCurrentProcess</td>
+</tr>
+<tr>
+<td>Passar por</td>
+<td><strong>F10</strong> (ao depurar: executa uma etapa sobre a ação)</td>
+<td>Debug.StepOver</td>
+</tr>
+<tr>
+<td>Passar por</td>
+<td><strong>F10</strong> (quando não está em depuração: inicia a depuração e para na primeira linha do código do usuário)</td>
+<td>Debug.StepOver</td>
+</tr>
+<tr>
+<td>Depurar de forma parcial o processo atual</td>
+<td><strong>Ctrl+Alt+F10</strong></td>
+<td>Debug.StepOverCurrentProcess</td>
+</tr>
+<tr>
+<td>Parar a depuração</td>
+<td><strong>Shift+F5</strong></td>
+<td>Debug.StopDebugging</td>
+</tr>
+<tr>
+<td>Interromper análise de desempenho</td>
+<td><strong>Shift+Alt+F2</strong></td>
+<td>Debug.StopPerformanceAnalysis</td>
+</tr>
+<tr>
+<td>Tarefas</td>
+<td><strong>Ctrl+Shift+D, K</strong></td>
+<td>Debug.Tasks</td>
+</tr>
+<tr>
+<td>Threads</td>
+<td><strong>Ctrl+Alt+H</strong></td>
+<td>Debug.Threads</td>
+</tr>
+<tr>
+<td>Alterna um ponto de interrupção</td>
+<td><strong>F9</strong></td>
+<td>Debug.ToggleBreakpoint</td>
+</tr>
+<tr>
+<td>Alternar desmontagem</td>
+<td><strong>Ctrl+F11</strong></td>
+<td>Debug.ToggleDisassembly</td>
+</tr>
+<tr>
+<td>Inspeção 1</td>
+<td><strong>Ctrl+Alt+W, 1</strong></td>
+<td>Debug.Watch1</td>
+</tr>
+<tr>
+<td>Inspeção 2</td>
+<td><strong>Ctrl+Alt+W, 2</strong></td>
+<td>Debug.Watch2</td>
+</tr>
+<tr>
+<td>Inspeção 3</td>
+<td><strong>Ctrl+Alt+W, 3</strong></td>
+<td>Debug.Watch3</td>
+</tr>
+<tr>
+<td>Inspeção 4</td>
+<td><strong>Ctrl+Alt+W, 4</strong></td>
+<td>Debug.Watch4</td>
+</tr>
+</tbody>
+</table>
+<h3> Menus de contexto do depurador: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excluir</td>
+<td><strong>Alt+F9, D</strong></td>
+<td>DebuggerContextMenus.BreakpointsWindow.Delete</td>
+</tr>
+<tr>
+<td>Ir para desmontagem</td>
+<td><strong>Alt+F9, A</strong></td>
+<td>DebuggerContextMenus.BreakpointsWindow.GoToDisassembly</td>
+</tr>
+<tr>
+<td>Ir para o código-fonte</td>
+<td><strong>Alt+F9, S</strong></td>
+<td>DebuggerContextMenus.BreakpointsWindow.GoToSourceCode</td>
+</tr>
+</tbody>
+</table>
+<h3> Hub de Diagnóstico: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interromper a coleta</td>
+<td><strong>Ctrl+Alt+F2</strong></td>
+<td>DiagnosticsHub.StopCollection</td>
+</tr>
+</tbody>
+</table>
+<h3> Editar: Atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copiar</td>
+<td><strong>Ctrl+C</strong><br><br> ou<br><br> <strong>Ctrl+Ins</strong></td>
+<td>Edit.Copy</td>
+</tr>
+<tr>
+<td>Recortar</td>
+<td><strong>Ctrl+X</strong><br><br> ou<br><br> <strong>Shift+Delete</strong></td>
+<td>Edit.Cut</td>
+</tr>
+<tr>
+<td>Anel da área de transferência de ciclo</td>
+<td><strong>Ctrl+Shift+V</strong><br><br> ou<br><br> <strong>Ctrl+Shift+Ins</strong></td>
+<td>Edit.CycleClipboardRing</td>
+</tr>
+<tr>
+<td>Excluir</td>
+<td><strong>Excluir</strong></td>
+<td>Edit.Delete</td>
+</tr>
+<tr>
+<td>Duplicar</td>
+<td><strong>Ctrl+D</strong></td>
+<td>Edit.Duplicate</td>
+</tr>
+<tr>
+<td>Localizar</td>
+<td><strong>Ctrl+F</strong></td>
+<td>Edit.Find</td>
+</tr>
+<tr>
+<td>Localizar todas as referências</td>
+<td><strong>Shift+F12</strong></td>
+<td>Edit.FindAllReferences</td>
+</tr>
+<tr>
+<td>Localizar nos arquivos</td>
+<td><strong>Ctrl+Shift+F</strong></td>
+<td>Edit.FindinFiles</td>
+</tr>
+<tr>
+<td>Localizar próximo</td>
+<td><strong>F3</strong></td>
+<td>Edit.FindNext</td>
+</tr>
+<tr>
+<td>Localizar Próxima seleção</td>
+<td><strong>Ctrl+F3</strong></td>
+<td>Edit.FindNextSelected</td>
+</tr>
+<tr>
+<td>Localizar anterior</td>
+<td><strong>Shift+F3</strong></td>
+<td>Edit.FindPrevious</td>
+</tr>
+<tr>
+<td>Localizar seleção anterior</td>
+<td><strong>Ctrl+Shift+F3</strong></td>
+<td>Edit.FindPreviousSelected</td>
+</tr>
+<tr>
+<td>Gerar método</td>
+<td><strong>Ctrl+K, Ctrl+M</strong></td>
+<td>Edit.GenerateMethod</td>
+</tr>
+<tr>
+<td>Ir para</td>
+<td><strong>Ctrl+G</strong></td>
+<td>Edit.GoTo</td>
+</tr>
+<tr>
+<td>Ir para Todos</td>
+<td><strong>Ctrl+,</strong> ou <strong>Ctrl+T</strong></td>
+<td>Edit.GoToAll</td>
+</tr>
+<tr>
+<td>Ir para a declaração</td>
+<td><strong>Ctrl+F12</strong></td>
+<td>Edit.GoToDeclaration</td>
+</tr>
+<tr>
+<td>Ir para definição</td>
+<td><strong>F12</strong></td>
+<td>Edit.GoToDefinition</td>
+</tr>
+<tr>
+<td>Ir para membro</td>
+<td><strong>Ctrl+1, Ctrl+M</strong> ou <strong>Ctrl+1, M</strong> ou <strong>Alt+\</strong></td>
+<td>Edit.GoToMember</td>
+</tr>
+<tr>
+<td>Ir para o próximo local</td>
+<td><strong>F8</strong> (próximo erro na Lista de Erros ou na janela Saída)</td>
+<td>Edit.GoToNextLocation</td>
+</tr>
+<tr>
+<td>Ir para o local de pré-desenvolvimento</td>
+<td><strong>Shift+F8</strong> (erro anterior na Lista de Erros ou na janela Saída)</td>
+<td>Edit.GoToPrevLocation</td>
+</tr>
+<tr>
+<td>Inserir Snippet</td>
+<td><strong>Ctrl+K, Ctrl+X</strong></td>
+<td>Edit.InsertSnippet</td>
+</tr>
+<tr>
+<td>Mover o controle para baixo</td>
+<td><strong>Ctrl+Seta para baixo</strong></td>
+<td>Edit.MoveControlDown</td>
+</tr>
+<tr>
+<td>Mover o controle para baixo na grade</td>
+<td><strong>Seta para Baixo</strong></td>
+<td>Edit.MoveControlDownGrid</td>
+</tr>
+<tr>
+<td>Mover o controle para a esquerda</td>
+<td><strong>Ctrl+Seta para a esquerda</strong></td>
+<td>Edit.MoveControlLeft</td>
+</tr>
+<tr>
+<td>Mover a grade esquerda do controle</td>
+<td><strong>Seta para a esquerda</strong></td>
+<td>Edit.MoveControlLeftGrid</td>
+</tr>
+<tr>
+<td>Mover o controle para a direita</td>
+<td><strong>Ctrl+Seta para a direita</strong></td>
+<td>Edit.MoveControlRight</td>
+</tr>
+<tr>
+<td>Mover a grade direita do controle</td>
+<td><strong>Seta para a direita</strong></td>
+<td>Edit.MoveControlRightGrid</td>
+</tr>
+<tr>
+<td>Mover o controle para cima</td>
+<td><strong>Ctrl+seta para cima</strong></td>
+<td>Edit.MoveControlUp</td>
+</tr>
+<tr>
+<td>Mover o controle para cima da grade</td>
+<td><strong>Seta para Cima</strong></td>
+<td>Edit.MoveControlUpGrid</td>
+</tr>
+<tr>
+<td>Próximo indicador</td>
+<td><strong>Ctrl+K, Ctrl+N</strong></td>
+<td>Edit.NextBookmark</td>
+</tr>
+<tr>
+<td>Próximo indicador na pasta</td>
+<td><strong>Ctrl+Shift+K, Ctrl+Shift+N</strong></td>
+<td>Edit.NextBookmarkInFolder</td>
+</tr>
+<tr>
+<td>Abrir arquivo</td>
+<td><strong>Ctrl+Shift+G</strong> (abre o nome do arquivo sob o cursor)</td>
+<td>Edit.OpenFile</td>
+</tr>
+<tr>
+<td>Colar</td>
+<td><strong>Ctrl+V</strong><br><br> ou<br><br> <strong>Shift+Ins</strong></td>
+<td>Edit.Paste</td>
+</tr>
+<tr>
+<td>Indicador anterior</td>
+<td><strong>Ctrl+K, Ctrl+P</strong></td>
+<td>Edit.PreviousBookmark</td>
+</tr>
+<tr>
+<td>Indicador anterior na pasta</td>
+<td><strong>Ctrl+Shift+K, Ctrl+Shift+P</strong></td>
+<td>Edit.PreviousBookmarkInFolder</td>
+</tr>
+<tr>
+<td>Localização rápida de símbolo</td>
+<td><strong>Shift+Alt+F12</strong></td>
+<td>Edit.QuickFindSymbol</td>
+</tr>
+<tr>
+<td>Refazer</td>
+<td><strong>Ctrl+Y</strong><br><br> ou<br><br> <strong>Ctrl+Shift+Z</strong><br><br> ou<br><br> <strong>Shift+Alt+Backspace</strong></td>
+<td>Edit.Redo</td>
+</tr>
+<tr>
+<td>Atualizar referências remotas</td>
+<td><strong>Ctrl+Shift+J</strong></td>
+<td>Edit.RefreshRemoteReferences</td>
+</tr>
+<tr>
+<td>Substitua</td>
+<td><strong>Ctrl+H</strong></td>
+<td>Edit.Replace</td>
+</tr>
+<tr>
+<td>Substituir nos arquivos</td>
+<td><strong>Ctrl+Shift+H</strong></td>
+<td>Edit.ReplaceinFiles</td>
+</tr>
+<tr>
+<td>Selecionar tudo</td>
+<td><strong>Ctrl+A</strong></td>
+<td>Edit.SelectAll</td>
+</tr>
+<tr>
+<td>Selecionar o próximo controle</td>
+<td><strong>Guia</strong></td>
+<td>Edit.SelectNextControl</td>
+</tr>
+<tr>
+<td>Selecionar controle anterior</td>
+<td><strong>Shift+Tab</strong></td>
+<td>Edit.SelectPreviousControl</td>
+</tr>
+<tr>
+<td>Mostrar grade de bloco</td>
+<td><strong>Enter</strong></td>
+<td>Edit.ShowTileGrid</td>
+</tr>
+<tr>
+<td>Dimensionar controle para baixo</td>
+<td><strong>Ctrl+Shift+Seta para baixo</strong></td>
+<td>Edit.SizeControlDown</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para baixo na grade</td>
+<td><strong>Shift+Seta para baixo</strong></td>
+<td>Edit.SizeControlDownGrid</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a esquerda</td>
+<td><strong>Ctrl+Shift+Seta para a esquerda</strong></td>
+<td>Edit.SizeControlLeft</td>
+</tr>
+<tr>
+<td>Dimensionar controle para a esquerda da grade</td>
+<td><strong>Shift+Seta para a esquerda</strong></td>
+<td>Edit.SizeControlLeftGrid</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a direita</td>
+<td><strong>Ctrl+Shift+Seta para a direita</strong></td>
+<td>Edit.SizeControlRight</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a direita da grade</td>
+<td><strong>Shift+Seta para a direita</strong></td>
+<td>Edit.SizeControlRightGrid</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para cima</td>
+<td><strong>Ctrl+Shift+Seta para cima</strong></td>
+<td>Edit.SizeControlUp</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para cima da grade</td>
+<td><strong>Shift+Seta para cima</strong></td>
+<td>Edit.SizeControlUpGrid</td>
+</tr>
+<tr>
+<td>Parar a pesquisa</td>
+<td><strong>Alt+F3, S</strong></td>
+<td>Edit.StopSearch</td>
+</tr>
+<tr>
+<td>Envolver com</td>
+<td><strong>Ctrl+K, Ctrl+S</strong> <br>(disponível apenas no Visual Studio 2019 e anterior)</td>
+<td>Edit.SurroundWith</td>
+</tr>
+<tr>
+<td>Desfazer</td>
+<td><strong>Ctrl+Z</strong><br><br> ou<br><br> <strong>Alt+Backspace</strong></td>
+<td>Edit.Undo</td>
+</tr>
+</tbody>
+</table>
+<h3> Menus de contexto do editor: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Condições de ponto de interrupção</td>
+<td><strong>Alt+F9, C</strong></td>
+<td>EditorContextMenus.CodeWindow.Breakpoint.BreakpointConditions</td>
+</tr>
+<tr>
+<td>Rótulos de edição de ponto de interrupção</td>
+<td><strong>Alt+F9, L</strong></td>
+<td>EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels</td>
+</tr>
+<tr>
+<td>Inserir um ponto de interrupção temporário</td>
+<td><strong>Shift+Alt+F9, T</strong></td>
+<td>EditorContextMenus.CodeWindow.Breakpoint.InsertTemporaryBreakpoint</td>
+</tr>
+<tr>
+<td>Mostrar item</td>
+<td><strong>Ctrl+`</strong></td>
+<td>EditorContextMenus.CodeWindow.CodeMap.ShowItem</td>
+</tr>
+<tr>
+<td>Execute (executar)</td>
+<td><strong>Ctrl+Alt+F5</strong></td>
+<td>EditorContextMenus.CodeWindow.Execute</td>
+</tr>
+<tr>
+<td>Ir para a exibição</td>
+<td><strong>Ctrl+M, Ctrl+G</strong></td>
+<td>EditorContextMenus.CodeWindow.GoToView</td>
+</tr>
+<tr>
+<td>Ativar/desativar arquivo de cabeçalho/código</td>
+<td><strong>Crtl+K, Ctrl+O</strong> (letra "O")</td>
+<td>EditorContextMenus.CodeWindow.ToggleHeaderCodeFile</td>
+</tr>
+<tr>
+<td>Exibir hierarquia de chamada</td>
+<td><strong>Ctrl+K, Ctrl+T</strong><br><br> ou<br><br> <strong>Ctrl+K, T</strong></td>
+<td>EditorContextMenus.CodeWindow.ViewCallHierarchy</td>
+</tr>
+</tbody>
+</table>
+<h3> Arquivo: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fechar</td>
+<td><strong>Alt+F4</strong></td>
+<td>File.Exit</td>
+</tr>
+<tr>
+<td>Novo arquivo</td>
+<td><strong>Ctrl+N</strong></td>
+<td>File.NewFile</td>
+</tr>
+<tr>
+<td>Novo Projeto</td>
+<td><strong>Ctrl+Shift+N</strong></td>
+<td>File.NewProject</td>
+</tr>
+<tr>
+<td>Novo site</td>
+<td><strong>Shift+Alt+N</strong></td>
+<td>File.NewWebSite</td>
+</tr>
+<tr>
+<td>Abrir arquivo</td>
+<td><strong>Ctrl+O</strong> (letra "O")</td>
+<td>File.OpenFile</td>
+</tr>
+<tr>
+<td>Abrir projeto</td>
+<td><strong>Ctrl+Shift+O</strong> (letra "O")</td>
+<td>File.OpenProject</td>
+</tr>
+<tr>
+<td>Abrir site</td>
+<td><strong>Shift+Alt+O</strong> (letra "O")</td>
+<td>File.OpenWebSite</td>
+</tr>
+<tr>
+<td>Imprimir</td>
+<td><strong>Ctrl+P</strong></td>
+<td>File.Print</td>
+</tr>
+<tr>
+<td>Salvar tudo</td>
+<td><strong>Ctrl+Shift+S</strong></td>
+<td>File.SaveAll</td>
+</tr>
+<tr>
+<td>Salvar Itens selecionados</td>
+<td><strong>Ctrl+S</strong></td>
+<td>File.SaveSelectedItems</td>
+</tr>
+<tr>
+<td>Exibir no navegador</td>
+<td><strong>Ctrl+Shift+W</strong></td>
+<td>File.ViewinBrowser</td>
+</tr>
+</tbody>
+</table>
+<h3> Ajuda: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adicionar e remover conteúdo de ajuda</td>
+<td><strong>Ctrl+Alt+F1</strong></td>
+<td>Help.AddandRemoveHelpContent</td>
+</tr>
+<tr>
+<td>ajuda F1</td>
+<td><strong>F1</strong></td>
+<td>Help.F1Help</td>
+</tr>
+<tr>
+<td>Exibir a ajuda</td>
+<td><strong>Ctrl+F1</strong></td>
+<td>Help.ViewHelp</td>
+</tr>
+<tr>
+<td>Ajuda da janela</td>
+<td><strong>Shift+F1</strong></td>
+<td>Help.WindowHelp</td>
+</tr>
+</tbody>
+</table>
+<h3> Teste de carga: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ir para o painel do contador</td>
+<td><strong>Ctrl+R, Q</strong></td>
+<td>LoadTest.JumpToCounterPane</td>
+</tr>
+</tbody>
+</table>
+<h3> Outros menus de contexto: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adicionar novo diagrama</td>
+<td><strong>Inserção</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram</td>
+</tr>
+</tbody>
+</table border="2" align="center" width="60%">
+<h3> Projeto: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adicionar item existente</td>
+<td><strong>Shift+Alt+A</strong></td>
+<td>Project.AddExistingItem</td>
+</tr>
+<tr>
+<td>Adicionar novo item</td>
+<td><strong>Ctrl+Shift+A</strong></td>
+<td>Project.AddNewItem</td>
+</tr>
+<tr>
+<td>Assistente de Classe</td>
+<td><strong>Ctrl+Shift+X</strong></td>
+<td>Project.ClassWizard</td>
+</tr>
+<tr>
+<td>Substituições</td>
+<td><strong>Ctrl+Alt+Ins</strong></td>
+<td>Project.Override</td>
+</tr>
+<tr>
+<td>Visualizar alterações</td>
+<td><strong>Alt+;</strong> e, em seguida, <strong>Alt+C</strong></td>
+<td>Project.Previewchanges</td>
+</tr>
+<tr>
+<td>Publicar arquivos selecionados</td>
+<td><strong>Alt+;</strong> e, em seguida, <strong>Alt+P</strong></td>
+<td>Project.Publishselectedfiles</td>
+</tr>
+<tr>
+<td>Substituir os arquivos selecionados do servidor</td>
+<td><strong>Alt+;</strong> e, em seguida, <strong>Alt+R</strong></td>
+<td>Project.Replaceselectedfilesfromserver</td>
+</tr>
+</tbody>
+</table>
+<h3> Menus de contexto de projeto e solução: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover para baixo</td>
+<td><strong>Alt+Seta para baixo</strong></td>
+<td>ProjectandSolutionContextMenus.Item.MoveDown</td>
+</tr>
+<tr>
+<td>Mover para cima</td>
+<td><strong>Alt+Up Arrow</strong></td>
+<td>ProjectandSolutionContextMenus.Item.MoveUp</td>
+</tr>
+</tbody>
+</table>
+<h3> Refatoração: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Encapsular campo</td>
+<td><strong>Ctrl+R, Ctrl+E</strong></td>
+<td>Refactor.EncapsulateField</td>
+</tr>
+<tr>
+<td>Extrair interface</td>
+<td><strong>Ctrl+R, Ctrl+I</strong></td>
+<td>Refactor.ExtractInterface</td>
+</tr>
+<tr>
+<td>Extrair método</td>
+<td><strong>Ctrl+R, Ctrl+M</strong></td>
+<td>Refactor.ExtractMethod</td>
+</tr>
+<tr>
+<td>Remover parâmetros</td>
+<td><strong>Ctrl+R, Ctrl+V</strong></td>
+<td>Refactor.RemoveParameters</td>
+</tr>
+<tr>
+<td>Renomear</td>
+<td><strong>Ctrl+R, Ctrl+R</strong></td>
+<td>Refactor.Rename</td>
+</tr>
+<tr>
+<td>Reordenar parâmetros</td>
+<td><strong>Crtl+R, Ctrl+O</strong> (letra "O")</td>
+<td>Refactor.ReorderParameters</td>
+</tr>
+</tbody>
+</table>
+<h3> Gerenciador de soluções: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abrir filtro de arquivos</td>
+<td><strong>Ctrl+[</strong>, <strong>O</strong> (letra "O")<br><br> ou<br><br> <strong>Ctrl+[</strong>, <strong>Ctrl+O</strong> (letra "O")</td>
+<td>SolutionExplorer.OpenFilesFilter</td>
+</tr>
+<tr>
+<td>Filtro de alterações pendentes</td>
+<td><strong>Ctrl+[</strong>, <strong>P</strong><br><br> ou<br><br> <strong>Ctrl+[</strong>, <strong>Ctrl+P</strong></td>
+<td>SolutionExplorer.PendingChangesFilter</td>
+</tr>
+<tr>
+<td>Sincronizar com documento ativo</td>
+<td><strong>Ctrl+[</strong>, <strong>S</strong><br><br> ou<br><br> <strong>Ctrl+[</strong>, <strong>Ctrl+S</strong></td>
+<td>SolutionExplorer.SyncWithActiveDocument</td>
+</tr>
+</tbody>
+</table>
+<h3> Equipe: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ir para ramificações do Git</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+N</strong><br><br> ou<br><br> <strong>Ctrl+0, N</strong></td>
+<td>Team.Git.GoToGitBranches</td>
+</tr>
+<tr>
+<td>Ir para alterações do Git</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+G</strong><br><br> ou<br><br> <strong>Ctrl+0, G</strong></td>
+<td>Team.Git.GoToGitChanges</td>
+</tr>
+<tr>
+<td>Ir para confirmações do Git</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+O</strong> (letra "O")<br><br> ou<br><br> <strong>Ctrl+0, O</strong></td>
+<td>Team.Git.GoToGitCommits</td>
+</tr>
+<tr>
+<td>Pesquisa do gerenciador de equipe</td>
+<td><strong>Ctrl+'</strong></td>
+<td>Team.TeamExplorerSearch</td>
+</tr>
+</tbody>
+</table>
+<h3> Menus de contexto do Team Foundation: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ir para compilações</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+B</strong><br><br> ou<br><br> <strong>Ctrl+0, B</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToBuilds</td>
+</tr>
+<tr>
+<td>Ir para conectar</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+C</strong><br><br> ou<br><br> <strong>Ctrl+0, C</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToConnect</td>
+</tr>
+<tr>
+<td>Ir para documentos</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+D</strong><br><br> ou<br><br> <strong>Ctrl+0, D</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToDocuments</td>
+</tr>
+<tr>
+<td>Ir para Início</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+H</strong><br><br> ou<br><br> <strong>Ctrl+0, H</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToHome</td>
+</tr>
+<tr>
+<td>Ir para meu trabalho</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+M</strong><br><br> ou<br><br> <strong>Ctrl+0, M</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToMyWork</td>
+</tr>
+<tr>
+<td>Ir para alterações pendentes</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+P</strong><br><br> ou<br><br> <strong>Ctrl+0, P</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToPendingChanges</td>
+</tr>
+<tr>
+<td>Ir para relatórios</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+R</strong><br><br> ou<br><br> <strong>Ctrl+0, R</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToReports</td>
+</tr>
+<tr>
+<td>Ir para configurações</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+S</strong><br><br> ou<br><br> <strong>Ctrl+0, S</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToSettings</td>
+</tr>
+<tr>
+<td>Ir para acesso via Web</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+A</strong><br><br> ou<br><br> <strong>Ctrl+0, A</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToWebAccess</td>
+</tr>
+<tr>
+<td>Ir para itens de trabalho</td>
+<td><strong>Ctrl+0</strong> (zero), <strong>Ctrl+W</strong><br><br> ou<br><br> <strong>Ctrl+0, W</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToWorkItems</td>
+</tr>
+</tbody>
+</table>
+<h3> Teste: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usar o construtor de teste de interface do usuário codificado</td>
+<td><strong>Ctrl+\, Ctrl+C</strong></td>
+<td>Test.UseCodedUITestBuilder</td>
+</tr>
+<tr>
+<td>Usar gravação de ação existente</td>
+<td><strong>Ctrl+\, Ctrl+A</strong></td>
+<td>Test.UseExistingActionRecording</td>
+</tr>
+</tbody>
+</table>
+<h3> Gerenciador de teste: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Depurar todos os testes</td>
+<td><strong>Ctrl+R, Ctrl+A</strong></td>
+<td>TestExplorer.DebugAllTests</td>
+</tr>
+<tr>
+<td>Depurar todos os testes no contexto</td>
+<td><strong>Ctrl+R, Ctrl+T</strong></td>
+<td>TestExplorer.DebugAllTestsInContext</td>
+</tr>
+<tr>
+<td>Depurar a última execução</td>
+<td><strong>Ctrl+R, D</strong></td>
+<td>TestExplorer.DebugLastRun</td>
+</tr>
+<tr>
+<td>Repetir última execução</td>
+<td><strong>Ctrl+R, L</strong></td>
+<td>TestExplorer.RepeatLastRun</td>
+</tr>
+<tr>
+<td>Executar todos os testes</td>
+<td><strong>Ctrl+R, A</strong></td>
+<td>TestExplorer.RunAllTests</td>
+</tr>
+<tr>
+<td>Executar todos os testes no contexto</td>
+<td><strong>Ctrl+R, T</strong></td>
+<td>TestExplorer.RunAllTestsInContext</td>
+</tr>
+<tr>
+<td>Mostrar gerenciador de testes</td>
+<td><strong>Ctrl+E, T</strong></td>
+<td>TestExplorer.ShowTestExplorer</td>
+</tr>
+<tr>
+<td>Abrir guia</td>
+<td><strong>Ctrl+E, L</strong></td>
+<td>LiveUnitTesting.OpenTab</td>
+</tr>
+<tr>
+<td>Resultados da cobertura de código</td>
+<td><strong>Ctrl+E, C</strong></td>
+<td>Test.CodeCoverageResults</td>
+</tr>
+</tbody>
+</table>
+<h3> Ferramentas: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anexar ao processo</td>
+<td><strong>Ctrl+Alt+P</strong></td>
+<td>Tools.AttachtoProcess</td>
+</tr>
+<tr>
+<td>Gerenciador de snippets de código</td>
+<td><strong>Ctrl+K, Ctrl+B</strong></td>
+<td>Tools.CodeSnippetsManager</td>
+</tr>
+<tr>
+<td>Forçar gc</td>
+<td><strong>Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12</strong></td>
+<td>Tools.ForceGC</td>
+</tr>
+</tbody>
+</table>
+<h3> Exibir: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Todos os Windows</td>
+<td><strong>Shift+Alt+M</strong></td>
+<td>View.AllWindows</td>
+</tr>
+<tr>
+<td>Gerenciador de arquitetura</td>
+<td><strong>Ctrl+\, Ctrl+R</strong></td>
+<td>View.ArchitectureExplorer</td>
+</tr>
+<tr>
+<td>Para Trás</td>
+<td><strong>Alt+Seta para a esquerda</strong> (funciona de maneira diferente do View.NavigateBackward no editor de texto)</td>
+<td>View.Backward</td>
+</tr>
+<tr>
+<td>Janela de Indicadores</td>
+<td><strong>Ctrl+K, Ctrl+W</strong></td>
+<td>View.BookmarkWindow</td>
+</tr>
+<tr>
+<td>Navegar para o próximo</td>
+<td><strong>Ctrl+Shift+1</strong></td>
+<td>View.BrowseNext</td>
+</tr>
+<tr>
+<td>Navegar para o anterior</td>
+<td><strong>Ctrl+Shift+2</strong></td>
+<td>View.BrowsePrevious</td>
+</tr>
+<tr>
+<td>Hierarquia de chamadas</td>
+<td><strong>Ctrl+Alt+K</strong></td>
+<td>View.CallHierarchy</td>
+</tr>
+<tr>
+<td>Exibição de classe</td>
+<td><strong>Ctrl+Shift+C</strong></td>
+<td>View.ClassView</td>
+</tr>
+<tr>
+<td>Combinação de exibição de classe ir para pesquisa</td>
+<td><strong>Ctrl+K, Ctrl+V</strong></td>
+<td>View.ClassViewGoToSearchCombo</td>
+</tr>
+<tr>
+<td>Janela de definição de código</td>
+<td><strong>Ctrl+\, D</strong><br><br> ou<br><br> <strong>Ctrl+\, Ctrl+D</strong></td>
+<td>View.CodeDefinitionWindow</td>
+</tr>
+<tr>
+<td>Janela Comando</td>
+<td><strong>Ctrl+Alt+A</strong></td>
+<td>View.CommandWindow</td>
+</tr>
+<tr>
+<td>Fontes de dados</td>
+<td><strong>Shift+Alt+D</strong></td>
+<td>View.DataSources</td>
+</tr>
+<tr>
+<td>Estrutura de tópicos do documento</td>
+<td><strong>Ctrl+Alt+T</strong></td>
+<td>View.DocumentOutline</td>
+</tr>
+<tr>
+<td>Editar rótulo</td>
+<td><strong>F2</strong></td>
+<td>View.EditLabel</td>
+</tr>
+<tr>
+<td>Lista de erros</td>
+<td><strong>Ctrl+\, E</strong><br><br> ou<br><br> <strong>Ctrl+\, Ctrl+E</strong></td>
+<td>View.ErrorList</td>
+</tr>
+<tr>
+<td>F# interativo</td>
+<td><strong>Ctrl+Alt+F</strong></td>
+<td>View.F#Interactive</td>
+</tr>
+<tr>
+<td>Localizar resultados do símbolo</td>
+<td><strong>Ctrl+Alt+F12</strong></td>
+<td>View.FindSymbolResults</td>
+</tr>
+<tr>
+<td>Encaminhar</td>
+<td><strong>Alt+Seta para a direita</strong> (funciona de maneira diferente do View.NavigateForward no editor de texto)</td>
+<td>View.Forward</td>
+</tr>
+<tr>
+<td>Encaminhar contexto de navegação</td>
+<td><strong>Ctrl+Shift+7</strong></td>
+<td>View.ForwardBrowseContext</td>
+</tr>
+<tr>
+<td>Tela inteira</td>
+<td><strong>Shift+Alt+Enter</strong></td>
+<td>View.FullScreen</td>
+</tr>
+<tr>
+<td>Navegar para trás</td>
+<td><strong>Ctrl+-</strong></td>
+<td>View.NavigateBackward</td>
+</tr>
+<tr>
+<td>Navegar para frente</td>
+<td><strong>Ctrl+Shift+-</strong></td>
+<td>View.NavigateForward</td>
+</tr>
+<tr>
+<td>Próximo erro</td>
+<td><strong>Ctrl+Shift+F12</strong></td>
+<td>View.NextError</td>
+</tr>
+<tr>
+<td>Notificações</td>
+<td><strong>Ctrl+W, N</strong><br><br> ou<br><br> <strong>Ctrl+W, Ctrl+N</strong></td>
+<td>View.Notifications</td>
+</tr>
+<tr>
+<td>Navegador de objetos</td>
+<td><strong>Ctrl+Alt+J</strong></td>
+<td>View.ObjectBrowser</td>
+</tr>
+<tr>
+<td>Combinação navegador de objetos ir para pesquisa</td>
+<td><strong>Ctrl+K, Ctrl+R</strong></td>
+<td>View.ObjectBrowserGoToSearchCombo</td>
+</tr>
+<tr>
+<td>Saída</td>
+<td><strong>Ctrl+Alt+O</strong> (letra "O")</td>
+<td>View.Output</td>
+</tr>
+<tr>
+<td>Contexto de navegação pop</td>
+<td><strong>Ctrl+Shift+8</strong> (somente C++)</td>
+<td>View.PopBrowseContext</td>
+</tr>
+<tr>
+<td>Janela de Propriedades</td>
+<td><strong>F4</strong></td>
+<td>View.PropertiesWindow</td>
+</tr>
+<tr>
+<td>Páginas de propriedades</td>
+<td><strong>Shift+F4</strong></td>
+<td>View.PropertyPages</td>
+</tr>
+<tr>
+<td>Modo de Exibição de Recursos</td>
+<td><strong>Ctrl+Shift+E</strong></td>
+<td>View.ResourceView</td>
+</tr>
+<tr>
+<td>Gerenciador de servidor</td>
+<td><strong>Ctrl+Alt+S</strong></td>
+<td>View.ServerExplorer</td>
+</tr>
+<tr>
+<td>Mostrar marca inteligente</td>
+<td><strong>Shift+Alt+F10</strong><br><br> ou<br><br> <strong>Ctrl+.</strong></td>
+<td>View.ShowSmartTag</td>
+</tr>
+<tr>
+<td>Gerenciador de soluções</td>
+<td><strong>Ctrl+Alt+L</strong></td>
+<td>View.SolutionExplorer</td>
+</tr>
+<tr>
+<td>Pesquisador de Objetos do SQL Server</td>
+<td><strong>Ctrl+\, Ctrl+S</strong></td>
+<td>View.SQLServerObjectExplorer</td>
+</tr>
+<tr>
+<td>Lista de tarefas</td>
+<td><strong>Ctrl+\, T</strong><br><br> ou<br><br> <strong>Ctrl+\, Ctrl+T</strong></td>
+<td>View.TaskList</td>
+</tr>
+<tr>
+<td>TFS team explorer</td>
+<td><strong>Ctrl+\, Ctrl+M</strong></td>
+<td>View.TfsTeamExplorer</td>
+</tr>
+<tr>
+<td>Caixa de Ferramentas</td>
+<td><strong>Ctrl+Alt+X</strong></td>
+<td>View.Toolbox</td>
+</tr>
+<tr>
+<td>Gerenciador de modelos UML</td>
+<td><strong>Ctrl+\, Ctrl+U</strong></td>
+<td>View.UMLModelExplorer</td>
+</tr>
+<tr>
+<td>Exibir Código</td>
+<td><strong>F7</strong></td>
+<td>View.ViewCode</td>
+</tr>
+<tr>
+<td>Designer de exibição</td>
+<td><strong>Shift+F7</strong></td>
+<td>View.ViewDesigner</td>
+</tr>
+<tr>
+<td>Navegador da Web</td>
+<td><strong>Ctrl+Alt+R</strong></td>
+<td>View.WebBrowser</td>
+</tr>
+<tr>
+<td>Ampliar</td>
+<td><strong>Ctrl+Shift+.</strong></td>
+<td>View.ZoomIn</td>
+</tr>
+<tr>
+<td>Reduzir</td>
+<td><strong>Ctrl+Shift+,</strong></td>
+<td>View.ZoomOut</td>
+</tr>
+<tr>
+<td>Mostrar gerenciador de testes</td>
+<td><strong>Ctrl+E, T</strong></td>
+<td>TestExplorer.ShowTestExplorer</td>
+</tr>
+</tbody>
+</table>
+<h3> Janela: atalhos globais</h3>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ativar janela do documento</td>
+<td><strong>Esc</strong></td>
+<td>Window.ActivateDocumentWindow</td>
+</tr>
+<tr>
+<td>Adicionar guia à seleção</td>
+<td><strong>Ctrl+Shift+Alt+Space</strong></td>
+<td>Window.AddTabtoSelection</td>
+</tr>
+<tr>
+<td>Fechar janela do documento</td>
+<td><strong>Ctrl+F4</strong></td>
+<td>Window.CloseDocumentWindow</td>
+</tr>
+<tr>
+<td>Fechar janela da ferramenta.</td>
+<td><strong>Shift+Esc</strong></td>
+<td>Window.CloseToolWindow</td>
+</tr>
+<tr>
+<td>Manter a guia aberta</td>
+<td><strong>Ctrl+Alt+Home</strong></td>
+<td>Window.KeepTabOpen</td>
+</tr>
+<tr>
+<td>Mover para a barra de navegação</td>
+<td><strong>Ctrl+F2</strong></td>
+<td>Window.MovetoNavigationBar</td>
+</tr>
+<tr>
+<td>Próxima janela do documento</td>
+<td><strong>Ctrl+F6</strong></td>
+<td>Window.NextDocumentWindow</td>
+</tr>
+<tr>
+<td>Nav próxima janela do documento</td>
+<td><strong>Ctrl+Tab</strong></td>
+<td>Window.NextDocumentWindowNav</td>
+</tr>
+<tr>
+<td>Próximo painel</td>
+<td><strong>Alt+F6</strong></td>
+<td>Window.NextPane</td>
+</tr>
+<tr>
+<td>Próximo painel dividido</td>
+<td><strong>F6</strong></td>
+<td>Window.NextSplitPane</td>
+</tr>
+<tr>
+<td>Próxima guia</td>
+<td><strong>Ctrl+Alt+PgDn</strong><br><br> ou<br><br> <strong>Ctrl+PgDn</strong></td>
+<td>Window.NextTab</td>
+</tr>
+<tr>
+<td>Próxima guia e adicionar à seleção</td>
+<td><strong>Ctrl+Shift+Alt+PgDn</strong></td>
+<td>Window.NextTabandAddtoSelection</td>
+</tr>
+<tr>
+<td>Nav próxima da janela de ferramentas</td>
+<td><strong>Alt+F7</strong></td>
+<td>Window.NextToolWindowNav</td>
+</tr>
+<tr>
+<td>Janela do documento anterior</td>
+<td><strong>Ctrl+Shift+F6</strong></td>
+<td>Window.PreviousDocumentWindow</td>
+</tr>
+<tr>
+<td>Nav janela do documento anterior</td>
+<td><strong>Ctrl+Shift+Tab</strong></td>
+<td>Window.PreviousDocumentWindowNav</td>
+</tr>
+<tr>
+<td>Painel anterior</td>
+<td><strong>Shift+Alt+F6</strong></td>
+<td>Window.PreviousPane</td>
+</tr>
+<tr>
+<td>Painel de divisão anterior</td>
+<td><strong>Shift+F6</strong></td>
+<td>Window.PreviousSplitPane</td>
+</tr>
+<tr>
+<td>Guia Anterior</td>
+<td><strong>Ctrl+Alt+PgUp</strong><br><br> ou<br><br> <strong>Ctrl+PgUp</strong></td>
+<td>Window.PreviousTab</td>
+</tr>
+<tr>
+<td>Guia e adicionar à seleção anterior</td>
+<td><strong>Ctrl+Shift+Alt+PgUp</strong></td>
+<td>Window.PreviousTabandAddtoSelection</td>
+</tr>
+<tr>
+<td>Nav da janela de ferramentas anterior</td>
+<td><strong>Shift+Alt+F7</strong></td>
+<td>Window.PreviousToolWindowNav</td>
+</tr>
+<tr>
+<td>Início Rápido</td>
+<td><strong>Ctrl+Q</strong></td>
+<td>Window.QuickLaunch</td>
+</tr>
+<tr>
+<td>Categoria anterior de início rápido</td>
+<td><strong>Ctrl+Shift+Q</strong></td>
+<td>Window.QuickLaunchPreviousCategory</td>
+</tr>
+<tr>
+<td>Mostrar menu de encaixe</td>
+<td><strong>Alt+-</strong></td>
+<td>Window.ShowDockMenu</td>
+</tr>
+<tr>
+<td>Mostrar lista de arquivos Ex MDI</td>
+<td><strong>Ctrl+Alt+Down Arrow</strong></td>
+<td>Window.ShowEzMDIFileList</td>
+</tr>
+<tr>
+<td>Pesquisa do gerenciador de soluções</td>
+<td><strong>Ctrl+;</strong></td>
+<td>Window.SolutionExplorerSearch</td>
+</tr>
+<tr>
+<td>Pesquisa de janela</td>
+<td><strong>Alt+`</strong></td>
+<td>Window.WindowSearch</td>
+</tr>
+</tbody>
+</table >
+<h2>Atalhos específicos do contexto</h2>
+<p>Esses atalhos de teclado são específicos do contexto, o que significa que você pode usá-los com menus e itens no Visual Studio específicos para um tipo de projeto, linguagem de programação ou plataforma.</p>
+
+<h3> Designer de modelo de dados de entidade ADO.NET: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Down</td>
+<td><strong>Alt+Seta para baixo</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down</td>
+</tr>
+<tr>
+<td>Para baixo 5</td>
+<td><strong>Alt+PgDn</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5</td>
+</tr>
+<tr>
+<td>Para baixo</td>
+<td><strong>Alt+End</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom</td>
+</tr>
+<tr>
+<td>Para cima</td>
+<td><strong>Alt+Home</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop</td>
+</tr>
+<tr>
+<td>Up</td>
+<td><strong>Alt+Up Arrow</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up</td>
+</tr>
+<tr>
+<td>Para cima 5</td>
+<td><strong>Alt+PgUp</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5</td>
+</tr>
+<tr>
+<td>Renomear</td>
+<td><strong>Ctrl+R, R</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename</td>
+</tr>
+<tr>
+<td>Remover do diagrama</td>
+<td><strong>Shift+Del</strong></td>
+<td>OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram</td>
+</tr>
+<tr>
+<td>Gerenciador do modelo de dados de entidade</td>
+<td><strong>Ctrl+1</strong></td>
+<td>View.EntityDataModelBrowser</td>
+</tr>
+<tr>
+<td>Detalhes de mapeamento do modelo de dados de entidade</td>
+<td><strong>Ctrl+2</strong></td>
+<td>View.EntityDataModelMappingDetails</td>
+</tr>
+</tbody>
+</table>
+<h3"> Diagrama de classe: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recolher</td>
+<td><strong>Num -</strong></td>
+<td>ClassDiagram.Collapse</td>
+</tr>
+<tr>
+<td>Expanda</td>
+<td><strong>Num +</strong></td>
+<td>ClassDiagram.Expand</td>
+</tr>
+<tr>
+<td>Excluir</td>
+<td><strong>Ctrl+Del</strong></td>
+<td>Edit.Delete</td>
+</tr>
+<tr>
+<td>Expandir/recolher Lista de Tipos Base</td>
+<td><strong>Shift+Alt+B</strong></td>
+<td>Edit.ExpandCollapseBaseTypeList</td>
+</tr>
+<tr>
+<td>Navegar para Lollipop</td>
+<td><strong>Shift+Alt+L</strong></td>
+<td>Edit.NavigateToLollipop</td>
+</tr>
+<tr>
+<td>Remover do diagrama</td>
+<td><strong>Excluir</strong></td>
+<td>Edit.RemovefromDiagram</td>
+</tr>
+<tr>
+<td>Exibir Código</td>
+<td><strong>Enter</strong></td>
+<td>View.ViewCode</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de Teste de IU Codificado: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copiar Referência para a Área de Transferência</td>
+<td><strong>Ctrl+C</strong></td>
+<td>OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard</td>
+</tr>
+<tr>
+<td>Insira o atraso antes</td>
+<td><strong>Ctrl+Alt+D</strong></td>
+<td>OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore</td>
+</tr>
+<tr>
+<td>Localizar Todos</td>
+<td><strong>Shift+Alt+L</strong></td>
+<td>OtherContextMenus.UITestEditorContextMenu.LocateAll</td>
+</tr>
+<tr>
+<td>Localizar controle de interface do usuário</td>
+<td><strong>Ctrl+Shift+L</strong></td>
+<td>OtherContextMenus.UITestEditorContextMenu.LocatetheUIControl</td>
+</tr>
+<tr>
+<td>Mover o código</td>
+<td><strong>Ctrl+Alt+C</strong></td>
+<td>OtherContextMenus.UITestEditorContextMenu.Movecode</td>
+</tr>
+<tr>
+<td>Dividir em um novo método</td>
+<td><strong>Ctrl+Shift+T</strong></td>
+<td>OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de conjunto de dados: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inserir coluna</td>
+<td><strong>Inserção</strong></td>
+<td>OtherContextMenus.ColumnContext.InsertColumn</td>
+</tr>
+<tr>
+<td>Coluna</td>
+<td><strong>Ctrl+L</strong></td>
+<td>OtherContextMenus.DbTableContext.Add.Column</td>
+</tr>
+</tbody>
+</table>
+<h3> Visualizador de Diferenças: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ignorar espaços em branco</td>
+<td><strong>Ctrl+\, Ctrl+Barra de espaço</strong></td>
+<td>Diff.IgnoreTrimWhitespace</td>
+</tr>
+<tr>
+<td>Exibição embutida</td>
+<td><strong>Ctrl+\, Ctrl+1</strong></td>
+<td>Diff.InlineView</td>
+</tr>
+<tr>
+<td>Exibição somente esquerda</td>
+<td><strong>Ctrl+\, Ctrl+3</strong></td>
+<td>Diff.LeftOnlyView</td>
+</tr>
+<tr>
+<td>Próxima diferença</td>
+<td><strong>F8</strong></td>
+<td>Diff.NextDifference</td>
+</tr>
+<tr>
+<td>Diferença anterior</td>
+<td><strong>Shift+F8</strong></td>
+<td>Diff.PreviousDifference</td>
+</tr>
+<tr>
+<td>Exibição somente à direita</td>
+<td><strong>Ctrl+\, Ctrl+4</strong></td>
+<td>Diff.RightOnlyView</td>
+</tr>
+<tr>
+<td>Exibição lado a lado</td>
+<td><strong>Ctrl+\, Ctrl+2</strong></td>
+<td>Diff.SideBySideView</td>
+</tr>
+<tr>
+<td>Alternar entre esquerda e direita</td>
+<td><strong>Ctrl+\, Ctrl+Tab</strong></td>
+<td>Diff.SwitchBetweenLeftAndRight</td>
+</tr>
+<tr>
+<td>Sincronizar alternância do modo de exibição</td>
+<td><strong>Ctrl+\, Ctrl+Seta para baixo</strong></td>
+<td>Diff.SynchronizeViewToggle</td>
+</tr>
+<tr>
+<td>Adicionar comentário</td>
+<td><strong>Ctrl+Shift+K</strong></td>
+<td>EditorContextMenus.CodeWindow.AddComment</td>
+</tr>
+<tr>
+<td>Editar arquivo local</td>
+<td><strong>Ctrl+Shift+P</strong></td>
+<td>EditorContextMenus.CodeWindow.EditLocalFile</td>
+</tr>
+</tbody>
+</table>
+<h3> Explorador do DOM: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atualizar</td>
+<td><strong>F5</strong></td>
+<td>DOMExplorer.Refresh</td>
+</tr>
+<tr>
+<td>Selecionar elemento</td>
+<td><strong>Ctrl+B</strong></td>
+<td>DOMExplorer.SelectElement</td>
+</tr>
+<tr>
+<td>Mostrar layout</td>
+<td><strong>Ctrl+Shift+I</strong></td>
+<td>DOMExplorer.ShowLayout</td>
+</tr>
+</tbody>
+</table>
+<h3> F# Interativo: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cancelar avaliação interativa</td>
+<td><strong>Ctrl+Break</strong></td>
+<td>OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de Documentos do Graph: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adicionar nó</td>
+<td><strong>Inserção</strong></td>
+<td>ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode</td>
+</tr>
+<tr>
+<td>Ambas as dependências</td>
+<td><strong>B</strong></td>
+<td>ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies</td>
+</tr>
+<tr>
+<td>Dependências de entrada</td>
+<td><strong>I</strong></td>
+<td>ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies</td>
+</tr>
+<tr>
+<td>Dependências de saída</td>
+<td><strong>O</strong></td>
+<td>ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies</td>
+</tr>
+<tr>
+<td>Novo comentário.</td>
+<td><strong>Ctrl+Shift+K</strong><br><br> ou<br><br> <strong>Ctrl+E, C</strong></td>
+<td>ArchitectureContextMenus.DirectedGraphContextMenu.NewComment</td>
+</tr>
+<tr>
+<td>Remover</td>
+<td><strong>Excluir</strong></td>
+<td>ArchitectureContextMenus.DirectedGraphContextMenu.Remove</td>
+</tr>
+<tr>
+<td>Renomear</td>
+<td><strong>F2</strong></td>
+<td>ArchitectureContextMenus.DirectedGraphContextMenu.Rename</td>
+</tr>
+</tbody>
+</table>
+<h3> Diagnóstico gráfico: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quadro de captura</td>
+<td>Nenhum</td>
+<td>Debug.Graphics.CaptureFrame</td>
+</tr>
+<tr>
+<td>Mover a seleção de pixel para baixo</td>
+<td><strong>Shift+Alt+Seta para baixo</strong></td>
+<td>Gráficos.MoverSeleçãoDePixelParaBaixo</td>
+</tr>
+<tr>
+<td>Mover seleção de pixel para a esquerda</td>
+<td><strong>Shift+Alt+Seta para a esquerda</strong></td>
+<td>Gráficos.MoverSeleçãoDePixelParaEsquerda</td>
+</tr>
+<tr>
+<td>Mover a seleção de pixel para a direita</td>
+<td><strong>Shift+Alt+Seta para a direita</strong></td>
+<td>Gráficos.MoverSeleçãoDePixelParaDireita</td>
+</tr>
+<tr>
+<td>Mover seleção de pixel para cima</td>
+<td><strong>Shift+Alt+Seta para Cima</strong></td>
+<td>Gráficos.MoverSeleçãodePixelParaCima</td>
+</tr>
+<tr>
+<td>Aplicar zoom para o tamanho real</td>
+<td><strong>Shift+Alt+0</strong> (zero)</td>
+<td>Gráficos.AplicarZoomParaTamanhoReal</td>
+</tr>
+<tr>
+<td>Zoom para ajustar na janela</td>
+<td><strong>Shift+Alt+9</strong></td>
+<td>Gráficos.AplicarParaAjustarJanela</td>
+</tr>
+<tr>
+<td>Ampliar</td>
+<td><strong>Shift+Alt+=</strong></td>
+<td>Gráficos.Ampliar</td>
+</tr>
+<tr>
+<td>Reduzir</td>
+<td><strong>Shift+Alt+-</strong></td>
+<td>Gráficos.Reduzir</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor HTML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ir para o controlador</td>
+<td><strong>Ctrl+M, Ctrl+G</strong></td>
+<td>OtherContextMenus.HTMLContext.GoToController</td>
+</tr>
+</tbody>
+</table>
+<h3> Exibição de Design do Editor HTML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover o controle para baixo</td>
+<td><strong>Ctrl+Seta para baixo</strong></td>
+<td>Edit.MoveControlDown</td>
+</tr>
+<tr>
+<td>Mover o controle para cima</td>
+<td><strong>Ctrl+seta para cima</strong></td>
+<td>Edit.MoveControlUp</td>
+</tr>
+<tr>
+<td>Negrito</td>
+<td><strong>Ctrl+B</strong></td>
+<td>Format.Bold</td>
+</tr>
+<tr>
+<td>Converter em hiperlink</td>
+<td><strong>Ctrl+L</strong></td>
+<td>Format.ConverttoHyperlink</td>
+</tr>
+<tr>
+<td>Inserir indicador</td>
+<td><strong>Ctrl+Shift+L</strong></td>
+<td>Format.InsertBookmark</td>
+</tr>
+<tr>
+<td>Itálico</td>
+<td><strong>Ctrl+I</strong></td>
+<td>Format.Italic</td>
+</tr>
+<tr>
+<td>Underline</td>
+<td><strong>Ctrl+U</strong></td>
+<td>Format.Underline</td>
+</tr>
+<tr>
+<td>Adicionar página de conteúdo</td>
+<td><strong>Ctrl+M, Ctrl+C</strong></td>
+<td>Project.AddContentPage</td>
+</tr>
+<tr>
+<td>Coluna à esquerda</td>
+<td><strong>Ctrl+Alt+Seta para a esquerda</strong></td>
+<td>Table.ColumntotheLeft</td>
+</tr>
+<tr>
+<td>Coluna à direita</td>
+<td><strong>Ctrl+Alt+Seta para a Direita</strong></td>
+<td>Table.ColumntotheRight</td>
+</tr>
+<tr>
+<td>Linha acima</td>
+<td><strong>Ctrl+Alt+Seta para cima</strong></td>
+<td>Table.RowAbove</td>
+</tr>
+<tr>
+<td>Linha abaixo</td>
+<td><strong>Ctrl+Alt+Down Arrow</strong></td>
+<td>Table.RowBelow</td>
+</tr>
+<tr>
+<td>Controles não visuais net</td>
+<td><strong>Ctrl+Shift+N</strong></td>
+<td>View.ASP.NETNonvisualControls</td>
+</tr>
+<tr>
+<td>Editar mestre</td>
+<td><strong>Ctrl+M, Ctrl+M</strong></td>
+<td>View.EditMaster</td>
+</tr>
+<tr>
+<td>Próxima exibição</td>
+<td><strong>Ctrl+PgDn</strong></td>
+<td>View.NextView</td>
+</tr>
+<tr>
+<td>Mostrar marca inteligente</td>
+<td><strong>Shift+Alt+F10</strong></td>
+<td>View.ShowSmartTag</td>
+</tr>
+<tr>
+<td>Exibir marcação</td>
+<td><strong>Shift+F7</strong></td>
+<td>View.ViewMarkup</td>
+</tr>
+<tr>
+<td>Guia Anterior</td>
+<td><strong>Ctrl+PgUp</strong></td>
+<td>Window.PreviousTab</td>
+</tr>
+</tbody>
+</table>
+<h3> Exibição de fonte do editor HTML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ir para o controlador</td>
+<td><strong>Ctrl+M, Ctrl+G</strong></td>
+<td>OtherContextMenus.HTMLContext.GoToController</td>
+</tr>
+<tr>
+<td>Próxima exibição</td>
+<td><strong>Ctrl+PgDn</strong></td>
+<td>View.NextView</td>
+</tr>
+<tr>
+<td>Sincronizar exibições</td>
+<td><strong>Ctrl+Shift+Y</strong></td>
+<td>View.SynchronizeViews</td>
+</tr>
+<tr>
+<td>Designer de exibição</td>
+<td><strong>Shift+F7</strong></td>
+<td>View.ViewDesigner</td>
+</tr>
+<tr>
+<td>Guia Anterior</td>
+<td><strong>Ctrl+PgUp</strong></td>
+<td>Window.PreviousTab</td>
+</tr>
+</tbody>
+</table>
+<h3> Diagrama de camada: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excluir</td>
+<td><strong>Shift+Delete</strong></td>
+<td>Edit.Delete</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de recursos gerenciados: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editar célula</td>
+<td><strong>F2</strong></td>
+<td>Edit.EditCell</td>
+</tr>
+<tr>
+<td>Remover</td>
+<td><strong>Excluir</strong></td>
+<td>Edit.Remove</td>
+</tr>
+<tr>
+<td>Remover linha</td>
+<td><strong>Ctrl+Delete</strong></td>
+<td>Edit.RemoveRow</td>
+</tr>
+<tr>
+<td>Cancelar seleção</td>
+<td><strong>Escape</strong></td>
+<td>Edit.SelectionCancel</td>
+</tr>
+<tr>
+<td>Áudio</td>
+<td><strong>Ctrl+4</strong></td>
+<td>Resources.Audio</td>
+</tr>
+<tr>
+<td>Arquivos</td>
+<td><strong>Ctrl+5</strong></td>
+<td>Resources.Files</td>
+</tr>
+<tr>
+<td>Ícones</td>
+<td><strong>Ctrl+3</strong></td>
+<td>Resources.Icons</td>
+</tr>
+<tr>
+<td>Imagens</td>
+<td><strong>Ctrl+2</strong></td>
+<td>Resources.Images</td>
+</tr>
+<tr>
+<td>Outro</td>
+<td><strong>Ctrl+6</strong></td>
+<td>Resources.Other</td>
+</tr>
+<tr>
+<td>Cadeias de caracteres</td>
+<td><strong>Ctrl+1</strong></td>
+<td>Resources.Strings</td>
+</tr>
+</tbody>
+</table>
+<h3> Janela do editor de mesclagem: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definir foco na janela esquerda</td>
+<td><strong>Alt+1</strong></td>
+<td>TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow</td>
+</tr>
+<tr>
+<td>Definir foco na janela de resultados</td>
+<td><strong>Alt+2</strong></td>
+<td>TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow</td>
+</tr>
+<tr>
+<td>Definir foco na janela direita</td>
+<td><strong>Alt+3</strong></td>
+<td>TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow</td>
+</tr>
+</tbody>
+</table>
+<h3> Microsoft SQL Server Data Tools, Comparação de Esquemas: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comparação de esquema SSDT</td>
+<td><strong>Shift+Alt+C</strong></td>
+<td>SQL.SSDTSchemaCompareCompare</td>
+</tr>
+<tr>
+<td>Geração de script de comparação de esquemas SSDT</td>
+<td><strong>Shift+Alt+G</strong></td>
+<td>SQL.SSDTSchemaCompareGenerateScript</td>
+</tr>
+<tr>
+<td>Próxima alteração de comparação de esquema SSDT</td>
+<td><strong>Shift+Alt+.</strong></td>
+<td>SQL.SSDTSchemaCompareNextChange</td>
+</tr>
+<tr>
+<td>Alteração anterior de comparação de esquema SSDT</td>
+<td><strong>Shift+Alt+,</strong></td>
+<td>SQL.SSDTSchemaComparePreviousChange</td>
+</tr>
+<tr>
+<td>Para comparação de esquema SSDT</td>
+<td><strong>Alt+Break</strong></td>
+<td>SQL.SSDTSchemaCompareStop</td>
+</tr>
+<tr>
+<td>Atualizações de escrita de comparação de esquema SSDT</td>
+<td><strong>Shift+Alt+U</strong></td>
+<td>SQL.SSDTSchemaCompareWriteUpdates</td>
+</tr>
+</tbody>
+</table>
+<h3> Microsoft SQL Server Data Tools, Designer de tabelas: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Confirmar todas as edições</td>
+<td><strong>Shift+Alt+U</strong></td>
+<td>CommitAllEdits</td>
+</tr>
+<tr>
+<td>Expandir caracteres curingas</td>
+<td><strong>Ctrl+R, E</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+E</strong></td>
+<td>SQL.ExpandWildcards</td>
+</tr>
+<tr>
+<td>Qualificar nomes totalmente</td>
+<td><strong>Ctrl+R, Q</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+Q</strong></td>
+<td>SQL.FullyqualifyNames</td>
+</tr>
+<tr>
+<td>Mover para esquema</td>
+<td><strong>Ctrl+R, M</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+M</strong></td>
+<td>SQL.MovetoSchema</td>
+</tr>
+<tr>
+<td>Renomear</td>
+<td><strong>F2</strong><br><br> ou<br><br> <strong>Ctrl+R, R</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+R</strong></td>
+<td>SQL.Rename</td>
+</tr>
+<tr>
+<td>Exibir arquivo no painel de script</td>
+<td><strong>Shift+Alt+PgDn</strong></td>
+<td>ViewFileInScriptPanel</td>
+</tr>
+</tbody>
+</table>
+<h3> Microsoft SQL Server Data Tools, Editor T-SQL: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Confirmar todas as edições</td>
+<td><strong>Shift+Alt+U</strong></td>
+<td>CommitAllEdits</td>
+</tr>
+<tr>
+<td>Executar com depurador</td>
+<td><strong>Alt+F5</strong></td>
+<td>SQL.ExecuteWithDebugger</td>
+</tr>
+<tr>
+<td>Expandir caracteres curingas</td>
+<td><strong>Ctrl+R, E</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+E</strong></td>
+<td>SQL.ExpandWildcards</td>
+</tr>
+<tr>
+<td>Qualificar nomes totalmente</td>
+<td><strong>Ctrl+R, Q</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+Q</strong></td>
+<td>SQL.FullyqualifyNames</td>
+</tr>
+<tr>
+<td>Mover para esquema</td>
+<td><strong>Ctrl+R, M</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+M</strong></td>
+<td>SQL.MovetoSchema</td>
+</tr>
+<tr>
+<td>Renomear</td>
+<td><strong>F2</strong><br><br> ou<br><br> <strong>Ctrl+R, R</strong><br><br> ou<br><br> <strong>Ctrl+R, Ctrl+R</strong></td>
+<td>SQL.Rename</td>
+</tr>
+<tr>
+<td>Consulta de cancelamento do editor T SQL</td>
+<td><strong>Alt+Break</strong></td>
+<td>SQL.TSqlEditorCancelQuery</td>
+</tr>
+<tr>
+<td>Consulta de execução do editor T SQL</td>
+<td><strong>Ctrl+Shift+E</strong></td>
+<td>SQL.TSqlEditorExecuteQuery</td>
+</tr>
+<tr>
+<td>Resultados do editor T SQL como arquivo</td>
+<td><strong>Ctrl+D, F</strong></td>
+<td>SQL.TSqlEditorResultsAsFile</td>
+</tr>
+<tr>
+<td>Resultados do editor T SQL como grade</td>
+<td><strong>Ctrl+D, G</strong></td>
+<td>SQL.TSqlEditorResultsAsGrid</td>
+</tr>
+<tr>
+<td>Resultados do editor T SQL como texto</td>
+<td><strong>Ctrl+D, T</strong></td>
+<td>SQL.TSqlEditorResultsAsText</td>
+</tr>
+<tr>
+<td>Mostrar plano estimado do editor T SQL</td>
+<td><strong>Ctrl+D, E</strong></td>
+<td>SQL.TSqlEditorShowEstimatedPlan</td>
+</tr>
+<tr>
+<td>Plano de execução de alternância do editor T SQL</td>
+<td><strong>Ctrl+D, A</strong></td>
+<td>SQL.TSqlEditorToggleExecutionPlan</td>
+</tr>
+<tr>
+<td>Painel de resultados de alternância do editor T SQL</td>
+<td><strong>Ctrl+D, R</strong></td>
+<td>SQL.TSqlEditorToggleResultsPane</td>
+</tr>
+<tr>
+<td>Consulta de clone do editor T SQL</td>
+<td><strong>Ctrl+Alt+N</strong></td>
+<td>SQL.TSqlEditorCloneQuery</td>
+</tr>
+<tr>
+<td>Combinação de banco de dados do editor T SQL</td>
+<td><strong>Shift+Alt+PgDn</strong></td>
+<td>SQL.TSqlEditorDatabaseCombo</td>
+</tr>
+</tbody>
+</table>
+<h3> Microsoft SQL Server Data Tools, Editor PDW T-SQL: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Consulta de cancelamento do editor T SQL</td>
+<td><strong>Alt+Break</strong></td>
+<td>SQL.TSqlEditorCancelQuery</td>
+</tr>
+<tr>
+<td>Consulta de execução do editor T SQL</td>
+<td><strong>Ctrl+Shift+E</strong></td>
+<td>SQL.TSqlEditorExecuteQuery</td>
+</tr>
+<tr>
+<td>Resultados do editor T SQL como arquivo</td>
+<td><strong>Ctrl+D, F</strong></td>
+<td>SQL.TSqlEditorResultsAsFile</td>
+</tr>
+<tr>
+<td>Resultados do editor T SQL como grade</td>
+<td><strong>Ctrl+D, G</strong></td>
+<td>SQL.TSqlEditorResultsAsGrid</td>
+</tr>
+<tr>
+<td>Resultados do editor T SQL como texto</td>
+<td><strong>Ctrl+D, T</strong></td>
+<td>SQL.TSqlEditorResultsAsText</td>
+</tr>
+<tr>
+<td>Mostrar plano estimado do editor T SQL</td>
+<td><strong>Ctrl+D, E</strong></td>
+<td>SQL.TSqlEditorShowEstimatedPlan</td>
+</tr>
+<tr>
+<td>Plano de execução de alternância do editor T SQL</td>
+<td><strong>Ctrl+D, A</strong></td>
+<td>SQL.TSqlEditorToggleExecutionPlan</td>
+</tr>
+<tr>
+<td>Painel de resultados de alternância do editor T SQL</td>
+<td><strong>Ctrl+D, R</strong></td>
+<td>SQL.TSqlEditorToggleResultsPane</td>
+</tr>
+<tr>
+<td>Consulta de clone do editor T SQL</td>
+<td><strong>Ctrl+Alt+N</strong></td>
+<td>SQL.TSqlEditorCloneQuery</td>
+</tr>
+<tr>
+<td>Consulta de clone do editor T SQL</td>
+<td><strong>Shift+Alt+PgDn</strong></td>
+<td>SQL.TSqlEditorCloneQuery</td>
+</tr>
+</tbody>
+</table>
+<h3> Inspetor de página: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimizar</td>
+<td><strong>F12</strong></td>
+<td>PageInspector.Minimize</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de consultas: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cancelar a recuperação de dados</td>
+<td><strong>Ctrl+T</strong></td>
+<td>QueryDesigner.CancelRetrievingData</td>
+</tr>
+<tr>
+<td>Critérios</td>
+<td><strong>Ctrl+2</strong></td>
+<td>QueryDesigner.Criteria</td>
+</tr>
+<tr>
+<td>Diagrama</td>
+<td><strong>Ctrl+1</strong></td>
+<td>QueryDesigner.Diagram</td>
+</tr>
+<tr>
+<td>Executar SQL</td>
+<td><strong>Ctrl+R</strong></td>
+<td>QueryDesigner.ExecuteSQL</td>
+</tr>
+<tr>
+<td>Linha Goto</td>
+<td><strong>Ctrl+G</strong></td>
+<td>QueryDesigner.GotoRow</td>
+</tr>
+<tr>
+<td>Modo de junção</td>
+<td><strong>Ctrl+Shift+J</strong></td>
+<td>QueryDesigner.JoinMode</td>
+</tr>
+<tr>
+<td>Resultados</td>
+<td><strong>Ctrl+4</strong></td>
+<td>QueryDesigner.Results</td>
+</tr>
+<tr>
+<td>Sql</td>
+<td><strong>Ctrl+3</strong></td>
+<td>QueryDesigner.SQL</td>
+</tr>
+</tbody>
+</table>
+<h3> Resultados da consulta: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nova linha dos resultados da consulta</td>
+<td><strong>Alt+End</strong></td>
+<td>SQL.QueryResultsNewRow</td>
+</tr>
+<tr>
+<td>Atualização dos resultados da consulta</td>
+<td><strong>Shift+Alt+R</strong></td>
+<td>SQL.QueryResultsRefresh</td>
+</tr>
+<tr>
+<td>Parar resultados da Consulta</td>
+<td><strong>Alt+Break</strong></td>
+<td>SQL.QueryResultsStop</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de relatórios: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quebrar linha</td>
+<td><strong>Enter</strong></td>
+<td>Edit.BreakLine</td>
+</tr>
+<tr>
+<td>Char à esquerda</td>
+<td><strong>Seta para a esquerda</strong></td>
+<td>Edit.CharLeft</td>
+</tr>
+<tr>
+<td>Estender char para a esquerda</td>
+<td><strong>Shift+Seta para a esquerda</strong></td>
+<td>Edit.CharLeftExtend</td>
+</tr>
+<tr>
+<td>Char à direita</td>
+<td><strong>Seta para a direita</strong></td>
+<td>Edit.CharRight</td>
+</tr>
+<tr>
+<td>Estender char à direita</td>
+<td><strong>Shift+Seta para a direita</strong></td>
+<td>Edit.CharRightExtend</td>
+</tr>
+<tr>
+<td>Guia Inserir</td>
+<td><strong>Guia</strong></td>
+<td>Edit.InsertTab</td>
+</tr>
+<tr>
+<td>Uma linha abaixo</td>
+<td><strong>Seta para Baixo</strong></td>
+<td>Edit.LineDown</td>
+</tr>
+<tr>
+<td>Extensão de linha para baixo</td>
+<td><strong>Shift+Seta para baixo</strong></td>
+<td>Edit.LineDownExtend</td>
+</tr>
+<tr>
+<td>Uma linha acima</td>
+<td><strong>Seta para Cima</strong></td>
+<td>Edit.LineUp</td>
+</tr>
+<tr>
+<td>Estender linha para cima</td>
+<td><strong>Shift+Seta para cima</strong></td>
+<td>Edit.LineUpExtend</td>
+</tr>
+<tr>
+<td>Mover o controle para baixo</td>
+<td><strong>Ctrl+Seta para baixo</strong></td>
+<td>Edit.MoveControlDown</td>
+</tr>
+<tr>
+<td>Mover o controle para a esquerda</td>
+<td><strong>Ctrl+Seta para a esquerda</strong></td>
+<td>Edit.MoveControlLeft</td>
+</tr>
+<tr>
+<td>Mover o controle para a direita</td>
+<td><strong>Ctrl+Seta para a direita</strong></td>
+<td>Edit.MoveControlRight</td>
+</tr>
+<tr>
+<td>Mover o controle para cima</td>
+<td><strong>Ctrl+seta para cima</strong></td>
+<td>Edit.MoveControlUp</td>
+</tr>
+<tr>
+<td>Cancelar seleção</td>
+<td><strong>Esc</strong></td>
+<td>Edit.SelectionCancel</td>
+</tr>
+<tr>
+<td>Dimensionar controle para baixo</td>
+<td><strong>Ctrl+Shift+Seta para baixo</strong></td>
+<td>Edit.SizeControlDown</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a esquerda</td>
+<td><strong>Ctrl+Shift+Seta para a esquerda</strong></td>
+<td>Edit.SizeControlLeft</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a direita</td>
+<td><strong>Ctrl+Shift+Seta para a direita</strong></td>
+<td>Edit.SizeControlRight</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para cima</td>
+<td><strong>Ctrl+Shift+Seta para cima</strong></td>
+<td>Edit.SizeControlUp</td>
+</tr>
+<tr>
+<td>Tabulação à esquerda</td>
+<td><strong>Shift+Tab</strong></td>
+<td>Edit.TabLeft</td>
+</tr>
+<tr>
+<td>dados de relatório</td>
+<td><strong>Ctrl+Alt+D</strong></td>
+<td>View.ReportData</td>
+</tr>
+</tbody>
+</table>
+<h3> Diagrama de sequência: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Navegar para código</td>
+<td><strong>F12</strong></td>
+<td>ArchitectureDesigner.Sequence.NavigateToCode</td>
+</tr>
+<tr>
+<td>Excluir</td>
+<td><strong>Shift+Del</strong></td>
+<td>Edit.Delete</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de configurações: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editar célula</td>
+<td><strong>F2</strong></td>
+<td>Edit.EditCell</td>
+</tr>
+<tr>
+<td>Remover linha</td>
+<td><strong>Ctrl+Delete</strong></td>
+<td>Edit.RemoveRow</td>
+</tr>
+<tr>
+<td>Cancelar seleção</td>
+<td><strong>Esc</strong></td>
+<td>Edit.SelectionCancel</td>
+</tr>
+<tr>
+<td>Exibir Código</td>
+<td><strong>F7</strong></td>
+<td>View.ViewCode</td>
+</tr>
+</tbody>
+</table>
+<h3> Gerenciador de soluções: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exibir em inspetor de página</td>
+<td><strong>Ctrl+K, Ctrl+G</strong></td>
+<td>ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector</td>
+</tr>
+<tr>
+<td>Adicionar rapidamente um novo item ou classe</td>
+<td><strong>Shift+F2</strong></td>
+<td>AddQuickFile</td>
+</tr>
+</tbody>
+</table>
+<h3> Team Explorer: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho do Teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excluir</td>
+<td><strong>Excluir</strong></td>
+<td>Edit.Delete</td>
+</tr>
+<tr>
+<td>Renomear</td>
+<td><strong>F2</strong></td>
+<td>File.Rename</td>
+</tr>
+<tr>
+<td>Ir para navegação do Team Explorer</td>
+<td><strong>Alt+Home</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da próxima seção do Team Explorer</td>
+<td><strong>Alt+Seta para baixo</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent</td>
+</tr>
+<tr>
+<td>Ir para Conteúdo da Página do Team Explorer</td>
+<td><strong>Alt+0</strong> (zero)</td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent</td>
+</tr>
+<tr>
+<td>Ir para Conteúdo da Seção Anterior do Team Explorer</td>
+<td><strong>Alt+Up Arrow</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 1 do Team Explorer</td>
+<td><strong>Alt+1</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 2 do Team Explorer</td>
+<td><strong>Alt+2</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 3 do Team Explorer</td>
+<td><strong>Alt+3</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection3Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 4 do Team Explorer</td>
+<td><strong>Alt+4</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection4Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 5 do Team Explorer</td>
+<td><strong>Alt+5</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection5Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 6 do Team Explorer</td>
+<td><strong>Alt+6</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection6Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 7 do Team Explorer</td>
+<td><strong>Alt+7</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection7Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 8 do Team Explorer</td>
+<td><strong>Alt+8</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection8Content</td>
+</tr>
+<tr>
+<td>Ir para conteúdo da seção 9 do Team Explorer</td>
+<td><strong>Alt+9</strong></td>
+<td>TeamFoundationContextMenus.Commands.GoToTeamExplorerSection9Content</td>
+</tr>
+<tr>
+<td>Navegar para trás no Team Explorer</td>
+<td><strong>Alt+Left Arrow</strong></td>
+<td>TeamFoundationContextMenus.Commands.TeamExplorerNavigateBackward</td>
+</tr>
+<tr>
+<td>Navegar para frente no Team Explorer</td>
+<td><strong>Alt+Right Arrow</strong></td>
+<td>TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward</td>
+</tr>
+<tr>
+<td>Contexto do TFS minha página de trabalho criar cópia wi</td>
+<td><strong>Shift+Alt+C</strong></td>
+<td>TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI</td>
+</tr>
+<tr>
+<td>Contexto TFS minha página de trabalho novo wi vinculado</td>
+<td><strong>Shift+Alt+L</strong></td>
+<td>TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI</td>
+</tr>
+<tr>
+<td>Atualizar</td>
+<td><strong>F5</strong></td>
+<td>View.Refresh</td>
+</tr>
+</tbody>
+</table>
+<h3> Gerenciador de testes: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abrir teste</td>
+<td><strong>F12</strong></td>
+<td>TestExplorer.OpenTest</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de texto: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quebrar linha</td>
+<td><strong>Enter</strong><br><br> ou<br><br> <strong>Shift+Enter</strong></td>
+<td>Edit.BreakLine</td>
+</tr>
+<tr>
+<td>Char à esquerda</td>
+<td><strong>Seta para a esquerda</strong></td>
+<td>Edit.CharLeft</td>
+</tr>
+<tr>
+<td>Estender char para a esquerda</td>
+<td><strong>Shift+Seta para a esquerda</strong></td>
+<td>Edit.CharLeftExtend</td>
+</tr>
+<tr>
+<td>Coluna de extensão esquerda char</td>
+<td><strong>Shift+Alt+Seta para a esquerda</strong></td>
+<td>Edit.CharLeftExtendColumn</td>
+</tr>
+<tr>
+<td>Char à direita</td>
+<td><strong>Seta para a direita</strong></td>
+<td>Edit.CharRight</td>
+</tr>
+<tr>
+<td>Estender char à direita</td>
+<td><strong>Shift+Seta para a direita</strong></td>
+<td>Edit.CharRightExtend</td>
+</tr>
+<tr>
+<td>Coluna de extensão à direita char</td>
+<td><strong>Shift+Alt+Seta para a direita</strong></td>
+<td>Edit.CharRightExtendColumn</td>
+</tr>
+<tr>
+<td>Limpar indicadores</td>
+<td><strong>Ctrl+K, Ctrl+L</strong></td>
+<td>Edit.ClearBookmarks</td>
+</tr>
+<tr>
+<td>Recolher todas as estruturas de tópicos</td>
+<td><strong>Ctrl+M, Ctrl+A</strong></td>
+<td>Edit.CollapseAllOutlining</td>
+</tr>
+<tr>
+<td>Recolher a região atual</td>
+<td><strong>Ctrl+M, Ctrl+S</strong></td>
+<td>Edit.CollapseCurrentRegion</td>
+</tr>
+<tr>
+<td>Recolher marca</td>
+<td><strong>Ctrl+M, Ctrl+T</strong></td>
+<td>Edit.CollapseTag</td>
+</tr>
+<tr>
+<td>Recolher para definições</td>
+<td><strong>Ctrl+M, Ctrl+O</strong> (letra "O")</td>
+<td>Edit.CollapseToDefinitions</td>
+</tr>
+<tr>
+<td>Seleção de contrato</td>
+<td><strong>Shift+Alt+-</strong></td>
+<td>Edit.ContractSelection</td>
+</tr>
+<tr>
+<td>Comentar seleção</td>
+<td><strong>Ctrl+K, Ctrl+C</strong></td>
+<td>Edit.CommentSelection</td>
+</tr>
+<tr>
+<td>Completar a palavra</td>
+<td><strong>Ctrl+Espaço</strong><br><br> ou<br><br> <strong>Alt+Right Arrow</strong></td>
+<td>Edit.CompleteWord</td>
+</tr>
+<tr>
+<td>Copiar dica de parâmetro</td>
+<td><strong>Ctrl+Shift+Alt+C</strong></td>
+<td>Edit.CopyParameterTip</td>
+</tr>
+<tr>
+<td>Diminuir o nível de filtro</td>
+<td><strong>Alt+,</strong></td>
+<td>Edit.DecreaseFilterLevel</td>
+</tr>
+<tr>
+<td>Excluir para trás</td>
+<td><strong>Backspace</strong><br><br> ou<br><br> <strong>Shift+Bkspce</strong></td>
+<td>Edit.DeleteBackwards</td>
+</tr>
+<tr>
+<td>Excluir espaço em branco horizontal</td>
+<td><strong>Ctrl+K, Ctrl+\</strong></td>
+<td>Edit.DeleteHorizontalWhiteSpace</td>
+</tr>
+<tr>
+<td>Fim do documento</td>
+<td><strong>Ctrl+End</strong></td>
+<td>Edit.DocumentEnd</td>
+</tr>
+<tr>
+<td>Extensão final do documento</td>
+<td><strong>Ctrl+Shift+End</strong></td>
+<td>Edit.DocumentEndExtend</td>
+</tr>
+<tr>
+<td>Início do documento.</td>
+<td><strong>Ctrl+Home</strong></td>
+<td>Edit.DocumentStart</td>
+</tr>
+<tr>
+<td>Extensão de início do documento</td>
+<td><strong>Ctrl+Shift+Home</strong></td>
+<td>Edit.DocumentStartExtend</td>
+</tr>
+<tr>
+<td>Expandir todas as estruturas de tópicos</td>
+<td><strong>Ctrl+M, Ctrl+X</strong></td>
+<td>Edit.ExpandAllOutlining</td>
+</tr>
+<tr>
+<td>Expandir a região atual</td>
+<td><strong>Ctrl+M, Ctrl+E</strong></td>
+<td>Edit.ExpandCurrentRegion</td>
+</tr>
+<tr>
+<td>Expandir seleção</td>
+<td><strong>Shift+Alt+=</strong></td>
+<td>Edit.ExpandSelection</td>
+</tr>
+<tr>
+<td>Expandir a seleção para o bloco de contenção</td>
+<td><strong>Shift+Alt+]</strong></td>
+<td>Edit.ExpandSelectiontoContainingBlock</td>
+</tr>
+<tr>
+<td>Formatar documento</td>
+<td><strong>Ctrl+K, Ctrl+D</strong></td>
+<td>Edit.FormatDocument</td>
+</tr>
+<tr>
+<td>Formatar seleção</td>
+<td><strong>Ctrl+K, Ctrl+F</strong></td>
+<td>Edit.FormatSelection</td>
+</tr>
+<tr>
+<td>Goto para todos</td>
+<td><strong>Ctrl+T</strong><br><br> ou<br><br> <strong>Ctrl+,</strong></td>
+<td>Edit.GotoAll</td>
+</tr>
+<tr>
+<td>Chave goto</td>
+<td><strong>Ctrl+]</strong></td>
+<td>Edit.GotoBrace</td>
+</tr>
+<tr>
+<td>Extensão da chave goto</td>
+<td><strong>Ctrl+Shift+]</strong></td>
+<td>Edit.GotoBraceExtend</td>
+</tr>
+<tr>
+<td>Goto recente</td>
+<td><strong>Ctrl+T,R</strong></td>
+<td>Edit.GotoRecent</td>
+</tr>
+<tr>
+<td>Goto no próximo problema no arquivo</td>
+<td><strong>Alt+PgDn</strong></td>
+<td>Edit.GotoNextIssueinFile</td>
+</tr>
+<tr>
+<td>Goto no problema anterior no arquivo</td>
+<td><strong>Alt+PgUp</strong></td>
+<td>Edit.GotoPreviousIssueinFile</td>
+</tr>
+<tr>
+<td>Ocultar seleção</td>
+<td><strong>Ctrl+M, Ctrl+H</strong></td>
+<td>Edit.HideSelection</td>
+</tr>
+<tr>
+<td>Aumentar o nível de filtro</td>
+<td><strong>Alt+.</strong></td>
+<td>Edit.IncreaseFilterLevel</td>
+</tr>
+<tr>
+<td>Pesquisa incremental</td>
+<td><strong>Ctrl+I</strong></td>
+<td>Edit.IncrementalSearch</td>
+</tr>
+<tr>
+<td>Inserir sinais de Interpolação em todos os correspondentes</td>
+<td><strong>Shift+Alt+;</strong></td>
+<td>Edit.InsertCaretsatAllMatching</td>
+</tr>
+<tr>
+<td>Inserir próximo sinal de interpolação correspondente</td>
+<td><strong>Shift+Alt+.</strong></td>
+<td>Edit.InsertNextMatchingCaret</td>
+</tr>
+<tr>
+<td>Guia Inserir</td>
+<td><strong>Guia</strong></td>
+<td>Edit.InsertTab</td>
+</tr>
+<tr>
+<td>Corte de linha</td>
+<td><strong>Ctrl+L</strong></td>
+<td>Edit.LineCut</td>
+</tr>
+<tr>
+<td>Exclusão de linha</td>
+<td><strong>Ctrl+Shift+L</strong></td>
+<td>Edit.LineDelete</td>
+</tr>
+<tr>
+<td>Uma linha abaixo</td>
+<td><strong>Seta para Baixo</strong></td>
+<td>Edit.LineDown</td>
+</tr>
+<tr>
+<td>Extensão de linha para baixo</td>
+<td><strong>Shift+Seta para baixo</strong></td>
+<td>Edit.LineDownExtend</td>
+</tr>
+<tr>
+<td>Coluna de extensão de linha para baixo</td>
+<td><strong>Shift+Alt+Seta para baixo</strong></td>
+<td>Edit.LineDownExtendColumn</td>
+</tr>
+<tr>
+<td>Fim da linha</td>
+<td><strong>End</strong></td>
+<td>Edit.LineEnd</td>
+</tr>
+<tr>
+<td>Extensão de fim da linha</td>
+<td><strong>Shift+End</strong></td>
+<td>Edit.LineEndExtend</td>
+</tr>
+<tr>
+<td>Coluna de extensão de fim da linha</td>
+<td><strong>Shift+Alt+End</strong></td>
+<td>Edit.LineEndExtendColumn</td>
+</tr>
+<tr>
+<td>Linha aberta acima</td>
+<td><strong>Ctrl+Enter</strong></td>
+<td>Edit.LineOpenAbove</td>
+</tr>
+<tr>
+<td>Linha aberta abaixo</td>
+<td><strong>Ctrl+Shift+Enter</strong></td>
+<td>Edit.LineOpenBelow</td>
+</tr>
+<tr>
+<td>Início da linha</td>
+<td><strong>Início</strong></td>
+<td>Edit.LineStart</td>
+</tr>
+<tr>
+<td>Extensão do início da linha</td>
+<td><strong>Shift+Home</strong></td>
+<td>Edit.LineStartExtend</td>
+</tr>
+<tr>
+<td>Coluna de extensão de início da linha</td>
+<td><strong>Shift+Alt+Home</strong></td>
+<td>Edit.LineStartExtendColumn</td>
+</tr>
+<tr>
+<td>Transposição de linha</td>
+<td><strong>Shift+Alt+T</strong></td>
+<td>Edit.LineTranspose</td>
+</tr>
+<tr>
+<td>Uma linha acima</td>
+<td><strong>Seta para Cima</strong></td>
+<td>Edit.LineUp</td>
+</tr>
+<tr>
+<td>Estender linha para cima</td>
+<td><strong>Shift+Seta para cima</strong></td>
+<td>Edit.LineUpExtend</td>
+</tr>
+<tr>
+<td>Alinhar coluna de extensão</td>
+<td><strong>Shift+Alt+Seta para Cima</strong></td>
+<td>Edit.LineUpExtendColumn</td>
+</tr>
+<tr>
+<td>Listar os membros</td>
+<td><strong>Ctrl+J</strong></td>
+<td>Edit.ListMembers</td>
+</tr>
+<tr>
+<td>Colocar em minúsculas</td>
+<td><strong>Ctrl+U</strong></td>
+<td>Edit.MakeLowercase</td>
+</tr>
+<tr>
+<td>Colocar em maiúsculas</td>
+<td><strong>Ctrl+Shift+U</strong></td>
+<td>Edit.MakeUppercase</td>
+</tr>
+<tr>
+<td>Mover linhas selecionadas para paixo</td>
+<td><strong>Alt+Seta para baixo</strong></td>
+<td>Edit.MoveSelectedLinesDown</td>
+</tr>
+<tr>
+<td>Mover linhas selecionadas para cima</td>
+<td><strong>Alt+Up Arrow</strong></td>
+<td>Edit.MoveSelectedLinesUp</td>
+</tr>
+<tr>
+<td>Próxima referência realçada</td>
+<td><strong>Ctrl+Shift+Seta para baixo</strong></td>
+<td>Edit.NextHighlightedReference</td>
+</tr>
+<tr>
+<td>Modo de sobretipo</td>
+<td><strong>Inserção</strong></td>
+<td>Edit.OvertypeMode</td>
+</tr>
+<tr>
+<td>Uma página abaixo</td>
+<td><strong>PgDn</strong></td>
+<td>Edit.PageDown</td>
+</tr>
+<tr>
+<td>Extensão de página para baixo</td>
+<td><strong>Shift+PgDn</strong></td>
+<td>Edit.PageDownExtend</td>
+</tr>
+<tr>
+<td>Uma página acima</td>
+<td><strong>PgUp</strong></td>
+<td>Edit.PageUp</td>
+</tr>
+<tr>
+<td>Extensão de página para cima</td>
+<td><strong>Shift+PgUp</strong></td>
+<td>Edit.PageUpExtend</td>
+</tr>
+<tr>
+<td>Informações de parâmetro</td>
+<td><strong>Ctrl+Shift+Barra de espaços</strong></td>
+<td>Edit.ParameterInfo</td>
+</tr>
+<tr>
+<td>Colar dica de parâmetro</td>
+<td><strong>Ctrl+Shift+Alt+P</strong></td>
+<td>Edit.PasteParameterTip</td>
+</tr>
+<tr>
+<td>Espiar para trás</td>
+<td><strong>Ctrl+Alt+-</strong></td>
+<td>Edit.PeekBackward</td>
+</tr>
+<tr>
+<td>Inspecionar Definição</td>
+<td><strong>Alt+F12</strong></td>
+<td>Edit.PeekDefinition</td>
+</tr>
+<tr>
+<td>Espiar para frente</td>
+<td><strong>Ctrl+Alt+=</strong></td>
+<td>Edit.PeekForward</td>
+</tr>
+<tr>
+<td>Referência realçada anterior</td>
+<td><strong>Ctrl+Shift+Seta para cima</strong></td>
+<td>Edit.PreviousHighlightedReference</td>
+</tr>
+<tr>
+<td>Informações rápidas</td>
+<td><strong>Ctrl+K, Ctrl+I</strong></td>
+<td>Edit.QuickInfo</td>
+</tr>
+<tr>
+<td>Pesquisa incremental inversa</td>
+<td><strong>Ctrl+Shift+I</strong></td>
+<td>Edit.ReverseIncrementalSearch</td>
+</tr>
+<tr>
+<td>Rolar linha para baixo</td>
+<td><strong>Ctrl+Seta para baixo</strong></td>
+<td>Edit.ScrollLineDown</td>
+</tr>
+<tr>
+<td>Rolar linha para cima</td>
+<td><strong>Ctrl+seta para cima</strong></td>
+<td>Edit.ScrollLineUp</td>
+</tr>
+<tr>
+<td>Selecionar a palavra atual</td>
+<td><strong>Ctrl+W</strong></td>
+<td>Edit.SelectCurrentWord</td>
+</tr>
+<tr>
+<td>Cancelar seleção</td>
+<td><strong>Escape</strong></td>
+<td>Edit.SelectionCancel</td>
+</tr>
+<tr>
+<td>Selecione para voltar pela última vez</td>
+<td><strong>Ctrl+=</strong></td>
+<td>Edit.SelectToLastGoBack</td>
+</tr>
+<tr>
+<td>Mostrar menu de lente de código</td>
+<td><strong>Ctrl+K, Ctrl+`</strong></td>
+<td>Edit.ShowCodeLensMenu</td>
+</tr>
+<tr>
+<td>Mostrar menu de navegação</td>
+<td><strong>Alt+`</strong></td>
+<td>Edit.ShowNavigateMenu</td>
+</tr>
+<tr>
+<td>Interromper ocultação atual</td>
+<td><strong>Ctrl+M, Ctrl+U</strong></td>
+<td>Edit.StopHidingCurrent</td>
+</tr>
+<tr>
+<td>Interromper estrutura de tópicos</td>
+<td><strong>Ctrl+M, Ctrl+P</strong></td>
+<td>Edit.StopOutlining</td>
+</tr>
+<tr>
+<td>Trocar âncora</td>
+<td><strong>Ctrl+K, Ctrl+A</strong></td>
+<td>Edit.SwapAnchor</td>
+</tr>
+<tr>
+<td>Tabulação à esquerda</td>
+<td><strong>Shift+Tab</strong></td>
+<td>Edit.TabLeft</td>
+</tr>
+<tr>
+<td>Ativar/Desativar estrutura de tópicos para tudo</td>
+<td><strong>Ctrl+M, Ctrl+L</strong></td>
+<td>Edit.ToggleAllOutlining</td>
+</tr>
+<tr>
+<td>Ativar/desativar indicador</td>
+<td><strong>Ctrl+K, Ctrl+K</strong></td>
+<td>Edit.ToggleBookmark</td>
+</tr>
+<tr>
+<td>Alternar o modo de conclusão</td>
+<td><strong>Ctrl+Alt+Space</strong></td>
+<td>Edit.ToggleCompletionMode</td>
+</tr>
+<tr>
+<td>Ativar/Desativar Expansão da Estrutura de Tópicos</td>
+<td><strong>Ctrl+M, Ctrl+M</strong></td>
+<td>Edit.ToggleOutliningExpansion</td>
+</tr>
+<tr>
+<td>Alternar atalho da lista de tarefas</td>
+<td><strong>Ctrl+K, Ctrl+H</strong></td>
+<td>Edit.ToggleTaskListShortcut</td>
+</tr>
+<tr>
+<td>Ativar/desativar quebra automática de linha</td>
+<td><strong>Ctrl+E, Ctrl+W</strong></td>
+<td>Edit.ToggleWordWrap</td>
+</tr>
+<tr>
+<td>Remover Comentários da Seleção</td>
+<td><strong>Ctrl+K, Ctrl+U</strong></td>
+<td>Edit.UncommentSelection</td>
+</tr>
+<tr>
+<td>Exibir parte inferior</td>
+<td><strong>Ctrl+PgDn</strong></td>
+<td>Edit.ViewBottom</td>
+</tr>
+<tr>
+<td>Extensão da exibição da parte inferior</td>
+<td><strong>Ctrl+Shift+PgDn</strong></td>
+<td>Edit.ViewBottomExtend</td>
+</tr>
+<tr>
+<td>Exibir parte superior</td>
+<td><strong>Ctrl+PgUp</strong></td>
+<td>Edit.ViewTop</td>
+</tr>
+<tr>
+<td>Extensão exibição da parte superior</td>
+<td><strong>Ctrl+Shift+PgUp</strong></td>
+<td>Edit.ViewTopExtend</td>
+</tr>
+<tr>
+<td>Exibir espaço em branco</td>
+<td><strong>Ctrl+R, Ctrl+W</strong></td>
+<td>Edit.ViewWhiteSpace</td>
+</tr>
+<tr>
+<td>Excluir palavra até o fim</td>
+<td><strong>Ctrl+Delete</strong></td>
+<td>Edit.WordDeleteToEnd</td>
+</tr>
+<tr>
+<td>Excluir palavra até o início</td>
+<td><strong>Ctrl+Backspace</strong></td>
+<td>Edit.WordDeleteToStart</td>
+</tr>
+<tr>
+<td>Próxima palavra</td>
+<td><strong>Ctrl+Seta para a direita</strong></td>
+<td>Edit.WordNext</td>
+</tr>
+<tr>
+<td>Estender nova palavra</td>
+<td><strong>Ctrl+Shift+Seta para a direita</strong></td>
+<td>Edit.WordNextExtend</td>
+</tr>
+<tr>
+<td>Coluna estender próxima palavra</td>
+<td><strong>Ctrl+Shift+Alt+Seta para a Direita</strong></td>
+<td>Edit.WordNextExtendColumn</td>
+</tr>
+<tr>
+<td>Palavra anterior</td>
+<td><strong>Ctrl+Seta para a esquerda</strong></td>
+<td>Edit.WordPrevious</td>
+</tr>
+<tr>
+<td>Estender palavra anterior</td>
+<td><strong>Ctrl+Shift+Seta para a esquerda</strong></td>
+<td>Edit.WordPreviousExtend</td>
+</tr>
+<tr>
+<td>Coluna estender palavra anterior</td>
+<td><strong>Ctrl+Shift+Alt+Seta para a Esquerda</strong></td>
+<td>Edit.WordPreviousExtendColumn</td>
+</tr>
+<tr>
+<td>Transpor palavra</td>
+<td><strong>Ctrl+Shift+T</strong></td>
+<td>Edit.WordTranspose</td>
+</tr>
+<tr>
+<td>Executar em Interativo</td>
+<td><strong>Alt+Enter</strong></td>
+<td>EditorContextMenus.CodeWindow.ExecuteInInteractive</td>
+</tr>
+<tr>
+<td>Executar linha em interativo</td>
+<td><strong>Alt+'</strong></td>
+<td>EditorContextMenus.CodeWindow.ExecuteLineInInteractive</td>
+</tr>
+<tr>
+<td>Exibir em inspetor de página</td>
+<td><strong>Ctrl+K, Ctrl+G</strong></td>
+<td>OtherContextMenus.HTMLContext.ViewinPageInspector</td>
+</tr>
+<tr>
+<td>Movimentação de anotação do TFS na próxima região</td>
+<td><strong>Alt+PgDn</strong></td>
+<td>TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion</td>
+</tr>
+<tr>
+<td>Movimentação de anotação TFS região anterior</td>
+<td><strong>Alt+PgUp</strong></td>
+<td>TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion</td>
+</tr>
+</tbody>
+</table>
+<h3"> Diagrama de atividade UML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excluir</td>
+<td><strong>Shift+Del</strong></td>
+<td>Edit.Delete</td>
+</tr>
+</tbody>
+</table>
+<h3> Diagrama de classe UML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excluir do modelo</td>
+<td><strong>Shift+Del</strong></td>
+<td>Edit.DeleteFromModel</td>
+</tr>
+</tbody>
+</table>
+<h3> Diagrama de componente UML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excluir do modelo</td>
+<td><strong>Shift+Del</strong></td>
+<td>Edit.DeleteFromModel</td>
+</tr>
+</tbody>
+</table>
+<h3> Diagrama de caso de uso UML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excluir do modelo</td>
+<td><strong>Shift+Del</strong></td>
+<td>Edit.DeleteFromModel</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor do Acelerador de VC: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Novo acelerador</td>
+<td><strong>Inserção</strong></td>
+<td>Edit.NewAccelerator</td>
+</tr>
+<tr>
+<td>Próxima tecla digitada</td>
+<td><strong>Ctrl+W</strong></td>
+<td>Edit.NextKeyTyped</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de diálogo VC: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover o controle para baixo</td>
+<td><strong>Seta para Baixo</strong></td>
+<td>Edit.MoveControlDown</td>
+</tr>
+<tr>
+<td>Mover o controle para a esquerda</td>
+<td><strong>Seta para a esquerda</strong></td>
+<td>Edit.MoveControlLeft</td>
+</tr>
+<tr>
+<td>Mover o controle para a direita</td>
+<td><strong>Seta para a direita</strong></td>
+<td>Edit.MoveControlRight</td>
+</tr>
+<tr>
+<td>Mover o controle para cima</td>
+<td><strong>Seta para Cima</strong></td>
+<td>Edit.MoveControlUp</td>
+</tr>
+<tr>
+<td>Rolar coluna à esquerda</td>
+<td><strong>Ctrl+Seta para a esquerda</strong></td>
+<td>Edit.ScrollColumnLeft</td>
+</tr>
+<tr>
+<td>Rolar coluna para a direita</td>
+<td><strong>Ctrl+Seta para a direita</strong></td>
+<td>Edit.ScrollColumnRight</td>
+</tr>
+<tr>
+<td>Rolar linha para baixo</td>
+<td><strong>Ctrl+Seta para baixo</strong></td>
+<td>Edit.ScrollLineDown</td>
+</tr>
+<tr>
+<td>Rolar linha para cima</td>
+<td><strong>Ctrl+seta para cima</strong></td>
+<td>Edit.ScrollLineUp</td>
+</tr>
+<tr>
+<td>Dimensionar controle para baixo</td>
+<td><strong>Shift+Seta para baixo</strong></td>
+<td>Edit.SizeControlDown</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a esquerda</td>
+<td><strong>Shift+Seta para a esquerda</strong></td>
+<td>Edit.SizeControlLeft</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a direita</td>
+<td><strong>Shift+Seta para a direita</strong></td>
+<td>Edit.SizeControlRight</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para cima</td>
+<td><strong>Shift+Seta para cima</strong></td>
+<td>Edit.SizeControlUp</td>
+</tr>
+<tr>
+<td>Alinhar partes inferiores</td>
+<td><strong>Ctrl+Shift+Seta para baixo</strong></td>
+<td>Format.AlignBottoms</td>
+</tr>
+<tr>
+<td>Alinhar centros</td>
+<td><strong>Shift+F9</strong></td>
+<td>Format.AlignCenters</td>
+</tr>
+<tr>
+<td>Alinhar esquerdas</td>
+<td><strong>Ctrl+Shift+Seta para a esquerda</strong></td>
+<td>Format.AlignLefts</td>
+</tr>
+<tr>
+<td>Alinhar meios</td>
+<td><strong>F9</strong></td>
+<td>Format.AlignMiddles</td>
+</tr>
+<tr>
+<td>Alinhar direitas</td>
+<td><strong>Ctrl+Shift+Seta para a direita</strong></td>
+<td>Format.AlignRights</td>
+</tr>
+<tr>
+<td>Alinhar partes superiores</td>
+<td><strong>Ctrl+Shift+Seta para cima</strong></td>
+<td>Format.AlignTops</td>
+</tr>
+<tr>
+<td>Parte inferior do botão</td>
+<td><strong>Ctrl+B</strong></td>
+<td>Format.ButtonBottom</td>
+</tr>
+<tr>
+<td>Botão direito</td>
+<td><strong>Ctrl+R</strong></td>
+<td>Format.ButtonRight</td>
+</tr>
+<tr>
+<td>Centralizar horizontalmente</td>
+<td><strong>Ctrl+Shift+F9</strong></td>
+<td>Format.CenterHorizontal</td>
+</tr>
+<tr>
+<td>Centralizar verticalmente</td>
+<td><strong>Ctrl+F9</strong></td>
+<td>Format.CenterVertical</td>
+</tr>
+<tr>
+<td>Verificar mnemônica</td>
+<td><strong>Ctrl+M</strong></td>
+<td>Format.CheckMnemonics</td>
+</tr>
+<tr>
+<td>Dimensionar ao Conteúdo</td>
+<td><strong>Shift+F7</strong></td>
+<td>Format.SizetoContent</td>
+</tr>
+<tr>
+<td>Espaço de uma ponta a outra.</td>
+<td><strong>Alt+Right Arrow</strong><br><br> ou<br><br> <strong>Alt+Left Arrow</strong></td>
+<td>Format.SpaceAcross</td>
+</tr>
+<tr>
+<td>Espaço para baixo</td>
+<td><strong>Alt+Up Arrow</strong><br><br> ou<br><br> <strong>Alt+Seta para baixo</strong></td>
+<td>Format.SpaceDown</td>
+</tr>
+<tr>
+<td>Ordem de tabulação</td>
+<td><strong>Ctrl+D</strong></td>
+<td>Format.TabOrder</td>
+</tr>
+<tr>
+<td>Testar caixa de diálogo</td>
+<td><strong>Ctrl+T</strong></td>
+<td>Format.TestDialog</td>
+</tr>
+<tr>
+<td>Ativar/desativar guias</td>
+<td><strong>Ctrl+G</strong></td>
+<td>Format.ToggleGuides</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de imagem VC: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ferramenta Airbrush</td>
+<td><strong>Ctrl+A</strong></td>
+<td>Image.AirbrushTool</td>
+</tr>
+<tr>
+<td>Ferramenta de pincel</td>
+<td><strong>Ctrl+B</strong></td>
+<td>Image.BrushTool</td>
+</tr>
+<tr>
+<td>Copiar e Contornar Seleção</td>
+<td><strong>Ctrl+Shift+U</strong></td>
+<td>Image.CopyandOutlineSelection</td>
+</tr>
+<tr>
+<td>Desenhar Opaco</td>
+<td><strong>Ctrl+J</strong></td>
+<td>Image.DrawOpaque</td>
+</tr>
+<tr>
+<td>Ferramenta de elipse</td>
+<td><strong>ALT+P</strong></td>
+<td>Image.EllipseTool</td>
+</tr>
+<tr>
+<td>Ferramenta apagar</td>
+<td><strong>Ctrl+Shift+I</strong></td>
+<td>Image.EraseTool</td>
+</tr>
+<tr>
+<td>Ferramenta de elipse preenchida</td>
+<td><strong>Ctrl+Shift+Alt+P</strong></td>
+<td>Image.FilledEllipseTool</td>
+</tr>
+<tr>
+<td>Ferramenta de retângulo preenchido</td>
+<td><strong>Ctrl+Shift+Alt+R</strong></td>
+<td>Image.FilledRectangleTool</td>
+</tr>
+<tr>
+<td>Ferramenta de retângulo arredondado preenchida</td>
+<td><strong>Ctrl+Shift+Alt+W</strong></td>
+<td>Image.FilledRoundedRectangleTool</td>
+</tr>
+<tr>
+<td>Ferramenta Preencher</td>
+<td><strong>Ctrl+F</strong></td>
+<td>Image.FillTool</td>
+</tr>
+<tr>
+<td>Inverter Horizontalmente</td>
+<td><strong>Ctrl+H</strong></td>
+<td>Image.FlipHorizontal</td>
+</tr>
+<tr>
+<td>Inverter Verticalmente</td>
+<td><strong>Shift+Alt+H</strong></td>
+<td>Image.FlipVertical</td>
+</tr>
+<tr>
+<td>Pincel maior</td>
+<td><strong>Ctrl+=</strong></td>
+<td>Image.LargerBrush</td>
+</tr>
+<tr>
+<td>Ferramenta de linha</td>
+<td><strong>Ctrl+L</strong></td>
+<td>Image.LineTool</td>
+</tr>
+<tr>
+<td>Ferramenta de ampliação</td>
+<td><strong>Ctrl+M</strong></td>
+<td>Image.MagnificationTool</td>
+</tr>
+<tr>
+<td>Ampliar</td>
+<td><strong>Ctrl+Shift+M</strong></td>
+<td>Image.Magnify</td>
+</tr>
+<tr>
+<td>Novo tipo de imagem</td>
+<td><strong>Inserção</strong></td>
+<td>Image.NewImageType</td>
+</tr>
+<tr>
+<td>Próxima cor</td>
+<td><strong>Ctrl+]</strong><br><br> ou<br><br> <strong>Ctrl+Seta para a direita</strong></td>
+<td>Image.NextColor</td>
+</tr>
+<tr>
+<td>Próxima cor à direita</td>
+<td><strong>Ctrl+Shift+]</strong><br><br> ou<br><br> <strong>Ctrl+Shift+Seta para a direita</strong></td>
+<td>Image.NextRightColor</td>
+</tr>
+<tr>
+<td>Elipse com contorno</td>
+<td><strong>Shift+Alt+P</strong></td>
+<td>Image.OutlinedEllipseTool</td>
+</tr>
+<tr>
+<td>Ferramenta de retângulo com contorno</td>
+<td><strong>Shift+Alt+R</strong></td>
+<td>Image.OutlinedRectangleTool</td>
+</tr>
+<tr>
+<td>Ferramenta de retângulo arredondado com contorno</td>
+<td><strong>Shift+Alt+W</strong></td>
+<td>Image.OutlinedRoundedRectangleTool</td>
+</tr>
+<tr>
+<td>Ferramenta de lápis</td>
+<td><strong>Ctrl+I</strong></td>
+<td>Image.PencilTool</td>
+</tr>
+<tr>
+<td>Cor anterior</td>
+<td><strong>Ctrl+[</strong><br><br> ou<br><br> <strong>Ctrl+Seta para a esquerda</strong></td>
+<td>Image.PreviousColor</td>
+</tr>
+<tr>
+<td>Cor à direita anterior</td>
+<td><strong>Ctrl+Shift+[</strong><br><br> ou<br><br> <strong>Ctrl+Shift+Seta para a esquerda</strong></td>
+<td>Image.PreviousRightColor</td>
+</tr>
+<tr>
+<td>Ferramenta de seleção de retângulo</td>
+<td><strong>Shift+Alt+S</strong></td>
+<td>Image.RectangleSelectionTool</td>
+</tr>
+<tr>
+<td>Ferramenta de retângulo</td>
+<td><strong>ALT+R</strong></td>
+<td>Image.RectangleTool</td>
+</tr>
+<tr>
+<td>Girar 90 graus</td>
+<td><strong>Ctrl+Shift+H</strong></td>
+<td>Image.Rotate90Degrees</td>
+</tr>
+<tr>
+<td>Ferramenta de retângulo arredondado</td>
+<td><strong>ALT+W</strong></td>
+<td>Image.RoundedRectangleTool</td>
+</tr>
+<tr>
+<td>Mostrar grade</td>
+<td><strong>Ctrl+Alt+S</strong></td>
+<td>Image.ShowGrid</td>
+</tr>
+<tr>
+<td>Mostrar grade de bloco</td>
+<td><strong>Ctrl+Shift+Alt+S</strong></td>
+<td>Image.ShowTileGrid</td>
+</tr>
+<tr>
+<td>Pincel pequeno</td>
+<td><strong>Ctrl+.</strong></td>
+<td>Image.SmallBrush</td>
+</tr>
+<tr>
+<td>Pincel menor</td>
+<td><strong>Ctrl+-</strong></td>
+<td>Image.SmallerBrush</td>
+</tr>
+<tr>
+<td>Ferramenta de texto</td>
+<td><strong>Ctrl+T</strong></td>
+<td>Image.TextTool</td>
+</tr>
+<tr>
+<td>Usar seleção como pincel</td>
+<td><strong>Ctrl+U</strong></td>
+<td>Image.UseSelectionasBrush</td>
+</tr>
+<tr>
+<td>Ampliar</td>
+<td><strong>Ctrl+Shift+.</strong><br><br> ou<br><br> <strong>Ctrl+seta para cima</strong></td>
+<td>Image.ZoomIn</td>
+</tr>
+<tr>
+<td>Reduzir</td>
+<td><strong>Ctrl+Shift+,</strong><br><br> ou<br><br> <strong>Ctrl+Seta para baixo</strong></td>
+<td>Image.ZoomOut</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de cadeia de caracteres VC: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nova cadeia de caracteres</td>
+<td><strong>Inserção</strong></td>
+<td>Edit.NewString</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de exibição: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cancelar a recuperação de dados</td>
+<td><strong>Ctrl+T</strong></td>
+<td>QueryDesigner.CancelRetrievingData</td>
+</tr>
+<tr>
+<td>Critérios</td>
+<td><strong>Ctrl+2</strong></td>
+<td>QueryDesigner.Criteria</td>
+</tr>
+<tr>
+<td>Diagrama</td>
+<td><strong>Ctrl+1</strong></td>
+<td>QueryDesigner.Diagram</td>
+</tr>
+<tr>
+<td>Executar SQL</td>
+<td><strong>Ctrl+R</strong></td>
+<td>QueryDesigner.ExecuteSQL</td>
+</tr>
+<tr>
+<td>Linha Goto</td>
+<td><strong>Ctrl+G</strong></td>
+<td>QueryDesigner.GotoRow</td>
+</tr>
+<tr>
+<td>Modo de junção</td>
+<td><strong>Ctrl+Shift+J</strong></td>
+<td>QueryDesigner.JoinMode</td>
+</tr>
+<tr>
+<td>Resultados</td>
+<td><strong>Ctrl+4</strong></td>
+<td>QueryDesigner.Results</td>
+</tr>
+<tr>
+<td>Sql</td>
+<td><strong>Ctrl+3</strong></td>
+<td>QueryDesigner.SQL</td>
+</tr>
+</tbody>
+</table>
+<h3> Visual Studio: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Atalho de teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ocultar painel de métodos</td>
+<td><strong>Ctrl+1</strong></td>
+<td>OtherContextMenus.ORDesignerContext.HideMethodsPane</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de Formulários do Windows: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quebrar linha</td>
+<td><strong>Enter</strong></td>
+<td>Edit.BreakLine</td>
+</tr>
+<tr>
+<td>Char à esquerda</td>
+<td><strong>Seta para a esquerda</strong></td>
+<td>Edit.CharLeft</td>
+</tr>
+<tr>
+<td>Estender char para a esquerda</td>
+<td><strong>Shift+Seta para a esquerda</strong></td>
+<td>Edit.CharLeftExtend</td>
+</tr>
+<tr>
+<td>Char à direita</td>
+<td><strong>Seta para a direita</strong></td>
+<td>Edit.CharRight</td>
+</tr>
+<tr>
+<td>Estender char à direita</td>
+<td><strong>Shift+Seta para a direita</strong></td>
+<td>Edit.CharRightExtend</td>
+</tr>
+<tr>
+<td>Fim do documento</td>
+<td><strong>End</strong></td>
+<td>Edit.DocumentEnd</td>
+</tr>
+<tr>
+<td>Extensão final do documento</td>
+<td><strong>Shift+End</strong></td>
+<td>Edit.DocumentEndExtend</td>
+</tr>
+<tr>
+<td>Início do documento.</td>
+<td><strong>Início</strong></td>
+<td>Edit.DocumentStart</td>
+</tr>
+<tr>
+<td>Extensão de início do documento</td>
+<td><strong>Shift+Home</strong></td>
+<td>Edit.DocumentStartExtend</td>
+</tr>
+<tr>
+<td>Guia Inserir</td>
+<td><strong>Guia</strong></td>
+<td>Edit.InsertTab</td>
+</tr>
+<tr>
+<td>Uma linha abaixo</td>
+<td><strong>Seta para Baixo</strong></td>
+<td>Edit.LineDown</td>
+</tr>
+<tr>
+<td>Extensão de linha para baixo</td>
+<td><strong>Shift+Seta para cima</strong></td>
+<td>Edit.LineDownExtend</td>
+</tr>
+<tr>
+<td>Uma linha acima</td>
+<td><strong>Seta para Cima</strong></td>
+<td>Edit.LineUp</td>
+</tr>
+<tr>
+<td>Estender linha para cima</td>
+<td><strong>Shift+Seta para baixo</strong></td>
+<td>Edit.LineUpExtend</td>
+</tr>
+<tr>
+<td>Mover o controle para baixo</td>
+<td><strong>Ctrl+Seta para baixo</strong></td>
+<td>Edit.MoveControlDown</td>
+</tr>
+<tr>
+<td>Mover o controle para a esquerda</td>
+<td><strong>Ctrl+Seta para a esquerda</strong></td>
+<td>Edit.MoveControlLeft</td>
+</tr>
+<tr>
+<td>Mover o controle para a direita</td>
+<td><strong>Ctrl+Seta para a direita</strong></td>
+<td>Edit.MoveControlRight</td>
+</tr>
+<tr>
+<td>Mover o controle para cima</td>
+<td><strong>Ctrl+seta para cima</strong></td>
+<td>Edit.MoveControlUp</td>
+</tr>
+<tr>
+<td>Cancelar seleção</td>
+<td><strong>Escape</strong></td>
+<td>Edit.SelectionCancel</td>
+</tr>
+<tr>
+<td>Dimensionar controle para baixo</td>
+<td><strong>Ctrl+Shift+Seta para baixo</strong></td>
+<td>Edit.SizeControlDown</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a esquerda</td>
+<td><strong>Ctrl+Shift+Seta para a esquerda</strong></td>
+<td>Edit.SizeControlLeft</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para a direita</td>
+<td><strong>Ctrl+Shift+Seta para a direita</strong></td>
+<td>Edit.SizeControlRight</td>
+</tr>
+<tr>
+<td>Dimensionar o controle para cima</td>
+<td><strong>Ctrl+Shift+Seta para cima</strong></td>
+<td>Edit.SizeControlUp</td>
+</tr>
+<tr>
+<td>Tabulação à esquerda</td>
+<td><strong>Shift+Tab</strong></td>
+<td>Edit.TabLeft</td>
+</tr>
+</tbody>
+</table>
+<h3> Editor de imagem de trabalho: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criar Cópia do item de trabalho</td>
+<td><strong>Shift+Alt+C</strong></td>
+<td>Edit.CreateCopyofWorkItem</td>
+</tr>
+<tr>
+<td>Atualizar item de trabalho</td>
+<td><strong>F5</strong></td>
+<td>Edit.RefreshWorkItem</td>
+</tr>
+<tr>
+<td>Novo item de trabalho vinculado</td>
+<td><strong>Shift+Alt+L</strong></td>
+<td>Team.NewLinkedWorkItem</td>
+</tr>
+</tbody>
+</table>
+<h3> Exibição de consulta de item de trabalho: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criar Cópia do item de trabalho</td>
+<td><strong>Shift+Alt+C</strong></td>
+<td>Edit.CreateCopyofWorkItem</td>
+</tr>
+<tr>
+<td>Recuar</td>
+<td><strong>Shift+Alt+Seta para a direita</strong></td>
+<td>Edit.Indent</td>
+</tr>
+<tr>
+<td>Recuar para a esquerda</td>
+<td><strong>Shift+Alt+Seta para a esquerda</strong></td>
+<td>Edit.Outdent</td>
+</tr>
+<tr>
+<td>Novo item de trabalho vinculado</td>
+<td><strong>Shift+Alt+L</strong></td>
+<td>Team.NewLinkedWorkItem</td>
+</tr>
+<tr>
+<td>Atualizar</td>
+<td><strong>F5</strong></td>
+<td>Team.Refresh</td>
+</tr>
+<tr>
+<td>Alternar</td>
+<td><strong>Shift+Alt+V</strong></td>
+<td>Window.Toggle</td>
+</tr>
+</tbody>
+</table>
+<h3> Exibição de resultados de item de trabalho: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criar Cópia do item de trabalho</td>
+<td><strong>Shift+Alt+C</strong></td>
+<td>Edit.CreateCopyofWorkItem</td>
+</tr>
+<tr>
+<td>Recuar</td>
+<td><strong>Shift+Alt+Seta para a direita</strong></td>
+<td>Edit.Indent</td>
+</tr>
+<tr>
+<td>Recuar para a esquerda</td>
+<td><strong>Shift+Alt+Seta para a esquerda</strong></td>
+<td>Edit.Outdent</td>
+</tr>
+<tr>
+<td>Goto no próximo item de trabalho</td>
+<td><strong>Shift+Alt+N</strong></td>
+<td>Team.GotoNextWorkItem</td>
+</tr>
+<tr>
+<td>Goto no item de trabalho anterior</td>
+<td><strong>Shift+Alt+P</strong></td>
+<td>Team.GotoPreviousWorkItem</td>
+</tr>
+<tr>
+<td>Novo item de trabalho vinculado</td>
+<td><strong>Shift+Alt+L</strong></td>
+<td>Team.NewLinkedWorkItem</td>
+</tr>
+<tr>
+<td>Atualizar</td>
+<td><strong>F5</strong></td>
+<td>Team.Refresh</td>
+</tr>
+<tr>
+<td>Alternar</td>
+<td><strong>Shift+Alt+V</strong></td>
+<td>Window.Toggle</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de fluxo de trabalho: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Completar a palavra</td>
+<td><strong>Ctrl+K, W</strong><br><br> ou<br><br> <strong>Ctrl+K, Ctrl+W</strong><br><br> ou<br><br> <strong>Ctrl+Barra de espaços</strong><br><br> ou<br><br> <strong>Alt+Right Arrow</strong></td>
+<td>Edit.CompleteWord</td>
+</tr>
+<tr>
+<td>Diminuir o nível de filtro</td>
+<td><strong>Alt+,</strong></td>
+<td>Edit.DecreaseFilterLevel</td>
+</tr>
+<tr>
+<td>Aumentar o nível de filtro</td>
+<td><strong>Alt+.</strong></td>
+<td>Edit.IncreaseFilterLevel</td>
+</tr>
+<tr>
+<td>Listar os membros</td>
+<td><strong>Ctrl+K, L</strong><br><br> ou<br><br> <strong>Ctrl+K, Ctrl+L</strong><br><br> ou<br><br> <strong>Ctrl+J</strong></td>
+<td>Edit.ListMembers</td>
+</tr>
+<tr>
+<td>Informações de parâmetro</td>
+<td><strong>Ctrl+K, P</strong><br><br> ou<br><br> <strong>Ctrl+K, Ctrl+P</strong><br><br> ou<br><br> <strong>Ctrl+Shift+Barra de espaços</strong></td>
+<td>Edit.ParameterInfo</td>
+</tr>
+<tr>
+<td>Informações rápidas</td>
+<td><strong>Ctrl+K, I</strong><br><br> ou<br><br> <strong>Ctrl+K, Ctrl+I</strong></td>
+<td>Edit.QuickInfo</td>
+</tr>
+<tr>
+<td>Recolher</td>
+<td><strong>Ctrl+E, Ctrl+C</strong><br><br> ou<br><br> <strong>Ctrl+E, C</strong></td>
+<td>WorkflowDesigner.Collapse</td>
+</tr>
+<tr>
+<td>Recolher tudo</td>
+<td>ou</td>
+<td>WorkflowDesigner.CollapseAll</td>
+</tr>
+<tr>
+<td>Conectar nós</td>
+<td><strong>Ctrl+E, Ctrl+F</strong><br><br> ou<br><br> <strong>Ctrl+E, F</strong></td>
+<td>WorkflowDesigner.ConnectNodes</td>
+</tr>
+<tr>
+<td>Criar variável</td>
+<td><strong>Ctrl+E, Ctrl+N</strong><br><br> ou<br><br> <strong>Ctrl+E, N</strong></td>
+<td>WorkflowDesigner.CreateVariable</td>
+</tr>
+<tr>
+<td>Expandir tudo</td>
+<td><strong>Ctrl+E, Ctrl+X</strong><br><br> ou<br><br> <strong>Ctrl+E, X</strong></td>
+<td>WorkflowDesigner.ExpandAll</td>
+</tr>
+<tr>
+<td>Expandir no local</td>
+<td><strong>Ctrl+E, Ctrl+E</strong><br><br> ou<br><br> <strong>Ctrl+E, E</strong></td>
+<td>WorkflowDesigner.ExpandInPlace</td>
+</tr>
+<tr>
+<td>Acessar pai</td>
+<td><strong>Ctrl+E, Ctrl+P</strong><br><br> ou<br><br> <strong>Ctrl+E, P</strong></td>
+<td>WorkflowDesigner.GoToParent</td>
+</tr>
+<tr>
+<td>Mover o foco</td>
+<td><strong>Ctrl+E, Ctrl+M</strong><br><br> ou<br><br> <strong>Ctrl+E, M</strong></td>
+<td>WorkflowDesigner.MoveFocus</td>
+</tr>
+<tr>
+<td>Navegar pelo designer</td>
+<td><strong>Ctrl+Alt+F6</strong></td>
+<td>WorkflowDesigner.NavigateThroughDesigner</td>
+</tr>
+<tr>
+<td>Restaurar</td>
+<td><strong>Ctrl+E, Ctrl+R</strong><br><br> ou<br><br> <strong>Ctrl+E, R</strong></td>
+<td>WorkflowDesigner.Restore</td>
+</tr>
+<tr>
+<td>Mostrar/ocultar o designer de argumentos</td>
+<td><strong>Ctrl+E, Ctrl+A</strong><br><br> ou<br><br> <strong>Ctrl+E, A</strong></td>
+<td>WorkflowDesigner.ShowHideArgumentDesigner</td>
+</tr>
+<tr>
+<td>Mostra/ocultar o designer de importações</td>
+<td><strong>Ctrl+E, Ctrl+I</strong><br><br> ou<br><br> <strong>Ctrl+E, I</strong></td>
+<td>WorkflowDesigner.ShowHideImportsDesigner</td>
+</tr>
+<tr>
+<td>Mostrar/ocultar o mapa de visão geral</td>
+<td><strong>Ctrl+E, Ctrl+O</strong> (letra "O")<br><br> ou<br><br> <strong>Ctrl+E, O</strong></td>
+<td>WorkflowDesigner.ShowHideOverviewMap</td>
+</tr>
+<tr>
+<td>Mostrar/ocultar designer de variáveis</td>
+<td><strong>Ctrl+E, Ctrl+V</strong><br><br> ou<br><br> <strong>Ctrl+E, V</strong></td>
+<td>WorkflowDesigner.ShowHideVariableDesigner</td>
+</tr>
+<tr>
+<td>Alternar a seleção</td>
+<td><strong>Ctrl+E, Ctrl+S</strong><br><br> ou<br><br> <strong>Ctrl+E, S</strong></td>
+<td>WorkflowDesigner.ToggleSelection</td>
+</tr>
+<tr>
+<td>Ampliar</td>
+<td><strong>Ctrl+Num +</strong></td>
+<td>WorkflowDesigner.ZoomIn</td>
+</tr>
+<tr>
+<td>Reduzir</td>
+<td><strong>Ctrl+Num -</strong></td>
+<td>WorkflowDesigner.ZoomOut</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de UI XML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ajustar tudo</td>
+<td><strong>Ctrl+0</strong> (zero)</td>
+<td>Design.FitAll</td>
+</tr>
+<tr>
+<td>Mostrar identificadores</td>
+<td><strong>F9</strong></td>
+<td>Design.ShowHandles</td>
+</tr>
+<tr>
+<td>Ampliar</td>
+<td><strong>Ctrl+Alt+=</strong></td>
+<td>Design.ZoomIn</td>
+</tr>
+<tr>
+<td>Reduzir</td>
+<td><strong>Ctrl+Alt+-</strong></td>
+<td>Design.ZoomOut</td>
+</tr>
+<tr>
+<td>Editar texto</td>
+<td><strong>F2</strong></td>
+<td>Format.EditText</td>
+</tr>
+<tr>
+<td>Tudo</td>
+<td><strong>Ctrl+Shift+R</strong></td>
+<td>Format.ResetLayout.All</td>
+</tr>
+<tr>
+<td>Executar código do projeto</td>
+<td><strong>Ctrl+F9</strong></td>
+<td>Design.RunProjectCode</td>
+</tr>
+<tr>
+<td>Ocultar (somente Mesclagem)</td>
+<td><strong>Ctrl+H</strong></td>
+<td>Timeline.Hide (apenas Blend)</td>
+</tr>
+<tr>
+<td>Bloquear (somente mesclagem)</td>
+<td><strong>Ctrl+L</strong></td>
+<td>Timeline.Lock (apenas Blend)</td>
+</tr>
+<tr>
+<td>Mostrar (somente Mesclagem)</td>
+<td><strong>Ctrl+Shift+H</strong></td>
+<td>Timeline.Show (apenas Blend)</td>
+</tr>
+<tr>
+<td>Desbloquear (somente mesclagem)</td>
+<td><strong>Ctrl+Shift+L</strong></td>
+<td>Timeline.Unlock (apenas Blend)</td>
+</tr>
+<tr>
+<td>Mover borda esquerda para a esquerda</td>
+<td><strong>Ctrl+Shift+,</strong></td>
+<td>View.EdgeLeftMoveLeft</td>
+</tr>
+<tr>
+<td>Mover borda esquerda para a direita</td>
+<td><strong>Ctrl+Shift+.</strong></td>
+<td>View.EdgeLeftMoveRight</td>
+</tr>
+<tr>
+<td>Mover borda direita para a esquerda</td>
+<td><strong>Ctrl+Shift+Alt+,</strong></td>
+<td>View.EdgeRightMoveLeft</td>
+</tr>
+<tr>
+<td>Mover borda direita para a direita</td>
+<td><strong>Ctrl+Shift+Alt+.</strong></td>
+<td>View.EdgeRightMoveRight</td>
+</tr>
+<tr>
+<td>Mostrar menu de marcador de propriedade</td>
+<td><strong>Ctrl+Barra de espaços</strong></td>
+<td>View.ShowPropertyMarkerMenu</td>
+</tr>
+</tbody>
+</table>
+<p>Para obter informações detalhadas, consulte <a href="../xaml-tools/keyboard-shortcuts-for-xaml-designer?view=vs-2022" data-linktype="relative-path">Atalhos de teclado para atalhos de designer XAML</a> e <a href="../xaml-tools/keyboard-shortcuts-in-blend?view=vs-2022" data-linktype="relative-path">teclado em Blend para Visual Studio</a>.</p>
+<h3 id="bkmk_xml-text-editor-context-specific-shortcuts"> Editor (de texto) XML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iniciar depuração XSLT</td>
+<td><strong>Alt+F5</strong></td>
+<td>XML.StartXSLTDebugging</td>
+</tr>
+<tr>
+<td>Iniciar XSLT sem depuração</td>
+<td><strong>Ctrl+Alt+F5</strong></td>
+<td>XML.StartXSLTWithoutDebugging</td>
+</tr>
+</tbody>
+</table>
+<h3> Designer de esquema XML: atalhos específicos do contexto</h3>
+<p>Os atalhos específicos desse contexto são:</p>
+<table border="2" align="center" width="60%">
+<thead>
+<tr>
+<th>Comandos</th>
+<th>Atalhos do teclado</th>
+<th>ID de Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>De baixo para cima</td>
+<td><strong>Alt+Up Arrow</strong></td>
+<td>GraphView.BottomtoTop</td>
+</tr>
+<tr>
+<td>Da esquerda para a direita</td>
+<td><strong>Alt+Right Arrow</strong></td>
+<td>GraphView.LefttoRight</td>
+</tr>
+<tr>
+<td>Da direita para a esquerda</td>
+<td><strong>Alt+Left Arrow</strong></td>
+<td>GraphView.RighttoLeft</td>
+</tr>
+<tr>
+<td>De cima para baixo</td>
+<td><strong>Alt+Seta para baixo</strong></td>
+<td>GraphView.ToptoBottom</td>
+</tr>
+<tr>
+<td>Remover do espaço de trabalho</td>
+<td><strong>Excluir</strong></td>
+<td>OtherContextMenus.GraphView.RemovefromWorkspace</td>
+</tr>
+<tr>
+<td>Mostrar exibição de modelo de conteúdo</td>
+<td><strong>Ctrl+2</strong></td>
+<td>XsdDesigner.ShowContentModelView</td>
+</tr>
+<tr>
+<td>Mostrar exibição de gráfico</td>
+<td><strong>Ctrl+3</strong></td>
+<td>XsdDesigner.ShowGraphView</td>
+</tr>
+<tr>
+<td>Mostrar exibição inicial</td>
+<td><strong>Ctrl+1</strong></td>
+<td>XsdDesigner.ShowStartView</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+
+<img src="atalhos_navegation.jpg" alt="Image" height="300" width="600">
+<br><hr>  
+</body>
+<footer>
+    REFERÊNCIA<br>
+     LEARN.MICROSOFT. Atalhos de teclado no Visual Studio. Disponível em <a href="https://learn.microsoft.com/pt-br/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022"> https://learn.microsoft.com/pt-br/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022 </a> . Acesso em 26-mar-2023.
+
+	<h5>© Prof.  Iraê C. Brandão </h5>  Linkedin :  <a href="https://www.linkedin.com/in/irae-cesar-brandao-a2112b69/"> https://www.linkedin.com/in/irae-cesar-brandao-a2112b69/</a>" 
+</footer>
+</html>
