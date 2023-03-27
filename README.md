@@ -8,7 +8,16 @@ Temos de ter o cuidado ao executar os comandos e aferir se realmente que o coman
 
 Fonte de pesquisa: WEB
 
- REFERÊNCIA
-     LEARN.MICROSOFT. Atalhos de teclado no Visual Studio. Disponível em  https://learn.microsoft.com/pt-br/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022 . Acesso em 26-mar-2023.
 
-© Prof.  Iraê C. Brandão   Linkedin : https://www.linkedin.com/in/irae-cesar-brandao-a2112b69/
+REFERÊNCIAS
+
+GITHUB.(maykbrito/vscode_shortcuts.md). Atalhos VSCode. Disponível em: https://gist.github.com/maykbrito/b1fc8a1e9d920daf4bcf90839c234c23 . Acesso em 25-mar-2023.
+
+LEARN.MICROSOFT. Atalhos de teclado no Visual Studio. Disponível em https://learn.microsoft.com/pt-br/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022 . Acesso em 26-mar-2023.
+
+LEARN.MICROSOFT. Identificar e personalizar atalhos de teclado no Visual Studio. Disponível em https://learn.microsoft.com/pt-br/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022 . Acesso em 26-mar-2023.
+
+VISUAL STUDIO CODE. Keyboard Shortcuts Window. Disponível em https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf . Acesso em 20-mar-2023
+
+
+Elaborado por:  © Prof.  Iraê C. Brandão   Linkedin : https://www.linkedin.com/in/irae-cesar-brandao-a2112b69/
