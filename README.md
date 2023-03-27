@@ -5,6 +5,7 @@ Então, achei importante triar alguns dos atalhos e disponibilizar, de forma a a
 Abaixo, relaciono os atalhos de teclas do teclado para facilitar os comandos quando estiverem codando os seus códigos.
 Para tanto, deverá ter em mente que esses atalhos também podem ser customizados a critério de cada usuário.
 Temos de ter o cuidado ao executar os comandos e aferir se realmente que o comando dado aplicou o efeito pretendido.
+Está acessível a page em :  https://irae-cesar-brandao.github.io/vscode_teclas_atalhos/  
 
 Fonte de pesquisa: WEB
 
